@@ -6,7 +6,35 @@ using System.Threading.Tasks;
 
 namespace EntityLayer
 {
-    class ESEANS
+    public class ESEANS
     {
+        private int _SeansID;
+        private string _SeansSaat;
+
+        public int SeansID
+        {
+            get
+            {
+                return _SeansID;
+            }
+
+            set
+            {
+                _SeansID = value;
+            }
+        }
+
+        public string SeansSaat
+        {
+            get
+            {
+                return _SeansSaat;
+            }
+
+            set
+            {
+                _SeansSaat = value;
+            }
+        }
     }
 }
