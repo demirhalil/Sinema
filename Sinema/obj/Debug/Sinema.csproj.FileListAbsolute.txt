@@ -1,1 +1,8 @@
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.exe.config
+D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.exe
+D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.pdb
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Properties.Resources.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csproj.GenerateResource.Cache
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.exe
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.pdb

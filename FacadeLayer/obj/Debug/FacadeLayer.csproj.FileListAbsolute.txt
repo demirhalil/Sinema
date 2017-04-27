@@ -1,0 +1,7 @@
+D:\C#_Projeleri\Sinema\FacadeLayer\bin\Debug\FacadeLayer.dll
+D:\C#_Projeleri\Sinema\FacadeLayer\bin\Debug\FacadeLayer.pdb
+D:\C#_Projeleri\Sinema\FacadeLayer\bin\Debug\EntityLayer.dll
+D:\C#_Projeleri\Sinema\FacadeLayer\bin\Debug\EntityLayer.pdb
+D:\C#_Projeleri\Sinema\FacadeLayer\obj\Debug\FacadeLayer.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\FacadeLayer\obj\Debug\FacadeLayer.dll
+D:\C#_Projeleri\Sinema\FacadeLayer\obj\Debug\FacadeLayer.pdb
