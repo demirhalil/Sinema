@@ -33,6 +33,7 @@ namespace FacadeLayer
                 com.Parameters.AddWithValue("MusteriSoyad", item.MusteriSoyad);
                 com.Parameters.AddWithValue("Koltuk", item.Koltuk);
                 com.Parameters.AddWithValue("BiletAdet", item.BiletAdet);
+                com.Parameters.AddWithValue("Ucret", item.Ucret);
                 sonuc = com.ExecuteNonQuery();
 
                 com.Dispose();
@@ -68,6 +69,7 @@ namespace FacadeLayer
                 com.Parameters.AddWithValue("MusteriSoyad", item.MusteriSoyad);
                 com.Parameters.AddWithValue("Koltuk", item.Koltuk);
                 com.Parameters.AddWithValue("BiletAdet", item.BiletAdet);
+                com.Parameters.AddWithValue("Ucret", item.Ucret);
                 sonuc = com.ExecuteNonQuery() > 0;
 
                 com.Dispose();

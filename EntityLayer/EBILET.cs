@@ -16,6 +16,7 @@ namespace EntityLayer
         private string _MusteriSoyad;
         private string _Koltuk;
         private int _BiletAdet;
+        private Decimal _Ucret;
 
         public int BiletID
         {
@@ -118,6 +119,19 @@ namespace EntityLayer
             set
             {
                 _BiletAdet = value;
+            }
+        }
+
+        public decimal Ucret
+        {
+            get
+            {
+                return _Ucret;
+            }
+
+            set
+            {
+                _Ucret = value;
             }
         }
     }

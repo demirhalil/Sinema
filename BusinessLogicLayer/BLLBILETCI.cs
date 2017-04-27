@@ -14,7 +14,7 @@ namespace BusinessLogicLayer
         //Bilet verilerinin kontrolünün yapıldığı metotlar.
         public static int Bilet_Insert(EBILET item)
         {
-            if (item.FilmID > 0 && item.SalonID > 0 && item.SeansID > 0 && item.MusteriAd != null && item.MusteriAd.Trim().Length > 0 && item.MusteriSoyad != null && item.MusteriSoyad.Trim().Length > 0 && item.Koltuk != null && item.Koltuk.Trim().Length > 0 && item.BiletAdet > 0)
+            if (item.FilmID > 0 && item.SalonID > 0 && item.SeansID > 0 && item.MusteriAd != null && item.MusteriAd.Trim().Length > 0 && item.MusteriSoyad != null && item.MusteriSoyad.Trim().Length > 0 && item.Koltuk != null && item.Koltuk.Trim().Length > 0 && item.BiletAdet > 0 && item.Ucret > 0)
             {
                 return FBILETCI.Bilet_Insert(item);
             }
@@ -24,7 +24,7 @@ namespace BusinessLogicLayer
 
         public static bool Bilet_Update(EBILET item)
         {
-            if (item.BiletID > 0 && item.FilmID > 0 && item.SalonID > 0 && item.SeansID > 0 && item.MusteriAd != null && item.MusteriAd.Trim().Length > 0 && item.MusteriSoyad != null && item.MusteriSoyad.Trim().Length > 0 && item.Koltuk != null && item.Koltuk.Trim().Length > 0 && item.BiletAdet > 0)
+            if (item.BiletID > 0 && item.FilmID > 0 && item.SalonID > 0 && item.SeansID > 0 && item.MusteriAd != null && item.MusteriAd.Trim().Length > 0 && item.MusteriSoyad != null && item.MusteriSoyad.Trim().Length > 0 && item.Koltuk != null && item.Koltuk.Trim().Length > 0 && item.BiletAdet > 0 && item.Ucret > 0)
             {
                 return FBILETCI.Bilet_Update(item);
             }
