@@ -111,7 +111,7 @@ namespace FacadeLayer
             return sonuc;
         }
 
-        public static EBILET Calisan_Select(int _BiletID)
+        public static EBILET Bilet_Select(int _BiletID)
         {
             EBILET item = new EBILET();
 

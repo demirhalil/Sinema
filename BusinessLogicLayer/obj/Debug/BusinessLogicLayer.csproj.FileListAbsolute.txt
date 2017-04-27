@@ -1,0 +1,9 @@
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\EntityLayer.dll
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\FacadeLayer.dll
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\EntityLayer.pdb
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\bin\Debug\FacadeLayer.pdb
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\C#_Projeleri\Sinema\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
