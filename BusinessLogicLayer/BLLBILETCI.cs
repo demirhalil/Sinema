@@ -42,7 +42,7 @@ namespace BusinessLogicLayer
             return false;
         }
 
-        public static EBILET Calisan_Select(int _BiletID)
+        public static EBILET Bilet_Select(int _BiletID)
         {
             if (_BiletID > 0)
             {

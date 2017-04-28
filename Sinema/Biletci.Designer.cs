@@ -28,55 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Biletci));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbFilm = new System.Windows.Forms.ComboBox();
-            this.cmbSalon = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.cmbSeans = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbSalon = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbFilm = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbOgrenci = new System.Windows.Forms.RadioButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnBiletKes = new System.Windows.Forms.Button();
+            this.lblFiyat = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.numericBiletAdet = new System.Windows.Forms.NumericUpDown();
+            this.txtKoltuk = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtAd = new System.Windows.Forms.TextBox();
-            this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.txtKoltuk = new System.Windows.Forms.TextBox();
-            this.numericBiletAdet = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblFiyat = new System.Windows.Forms.Label();
-            this.btnBiletKes = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn12 = new System.Windows.Forms.Button();
-            this.btn11 = new System.Windows.Forms.Button();
-            this.btn10 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn24 = new System.Windows.Forms.Button();
-            this.btn23 = new System.Windows.Forms.Button();
-            this.btn22 = new System.Windows.Forms.Button();
-            this.btn21 = new System.Windows.Forms.Button();
-            this.btn20 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btn19 = new System.Windows.Forms.Button();
-            this.btn18 = new System.Windows.Forms.Button();
-            this.btn17 = new System.Windows.Forms.Button();
-            this.btn16 = new System.Windows.Forms.Button();
-            this.btn15 = new System.Windows.Forms.Button();
-            this.btn14 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btn13 = new System.Windows.Forms.Button();
+            this.btn60 = new System.Windows.Forms.Button();
+            this.btn59 = new System.Windows.Forms.Button();
+            this.btn58 = new System.Windows.Forms.Button();
+            this.btn57 = new System.Windows.Forms.Button();
+            this.btn56 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btn55 = new System.Windows.Forms.Button();
+            this.btn54 = new System.Windows.Forms.Button();
+            this.btn53 = new System.Windows.Forms.Button();
+            this.btn52 = new System.Windows.Forms.Button();
+            this.btn51 = new System.Windows.Forms.Button();
+            this.btn50 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btn49 = new System.Windows.Forms.Button();
+            this.btn48 = new System.Windows.Forms.Button();
+            this.btn47 = new System.Windows.Forms.Button();
+            this.btn46 = new System.Windows.Forms.Button();
+            this.btn45 = new System.Windows.Forms.Button();
+            this.btn44 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.btn43 = new System.Windows.Forms.Button();
             this.btn42 = new System.Windows.Forms.Button();
             this.btn41 = new System.Windows.Forms.Button();
             this.btn40 = new System.Windows.Forms.Button();
@@ -98,34 +94,39 @@
             this.btn26 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.btn25 = new System.Windows.Forms.Button();
+            this.btn24 = new System.Windows.Forms.Button();
+            this.btn23 = new System.Windows.Forms.Button();
+            this.btn22 = new System.Windows.Forms.Button();
+            this.btn21 = new System.Windows.Forms.Button();
+            this.btn20 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btn19 = new System.Windows.Forms.Button();
+            this.btn18 = new System.Windows.Forms.Button();
+            this.btn17 = new System.Windows.Forms.Button();
+            this.btn16 = new System.Windows.Forms.Button();
+            this.btn15 = new System.Windows.Forms.Button();
+            this.btn14 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btn13 = new System.Windows.Forms.Button();
+            this.btn12 = new System.Windows.Forms.Button();
+            this.btn11 = new System.Windows.Forms.Button();
+            this.btn10 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnIptal = new System.Windows.Forms.Button();
             this.txtiptalKoltuk = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnIptal = new System.Windows.Forms.Button();
-            this.btn54 = new System.Windows.Forms.Button();
-            this.btn53 = new System.Windows.Forms.Button();
-            this.btn52 = new System.Windows.Forms.Button();
-            this.btn51 = new System.Windows.Forms.Button();
-            this.btn50 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.btn49 = new System.Windows.Forms.Button();
-            this.btn48 = new System.Windows.Forms.Button();
-            this.btn47 = new System.Windows.Forms.Button();
-            this.btn46 = new System.Windows.Forms.Button();
-            this.btn45 = new System.Windows.Forms.Button();
-            this.btn44 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btn43 = new System.Windows.Forms.Button();
-            this.btn60 = new System.Windows.Forms.Button();
-            this.btn59 = new System.Windows.Forms.Button();
-            this.btn58 = new System.Windows.Forms.Button();
-            this.btn57 = new System.Windows.Forms.Button();
-            this.btn56 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.btn55 = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
-            this.rbOgrenci = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericBiletAdet)).BeginInit();
@@ -149,24 +150,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Film Seçimi";
             // 
-            // label1
+            // cmbSeans
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(14, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Film :";
+            this.cmbSeans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSeans.FormattingEnabled = true;
+            this.cmbSeans.Location = new System.Drawing.Point(64, 169);
+            this.cmbSeans.Name = "cmbSeans";
+            this.cmbSeans.Size = new System.Drawing.Size(229, 27);
+            this.cmbSeans.TabIndex = 5;
             // 
-            // cmbFilm
+            // label3
             // 
-            this.cmbFilm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilm.FormattingEnabled = true;
-            this.cmbFilm.Location = new System.Drawing.Point(64, 45);
-            this.cmbFilm.Name = "cmbFilm";
-            this.cmbFilm.Size = new System.Drawing.Size(229, 27);
-            this.cmbFilm.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(3, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Seans :";
             // 
             // cmbSalon
             // 
@@ -187,24 +188,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Salon :";
             // 
-            // cmbSeans
+            // cmbFilm
             // 
-            this.cmbSeans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSeans.FormattingEnabled = true;
-            this.cmbSeans.Location = new System.Drawing.Point(64, 169);
-            this.cmbSeans.Name = "cmbSeans";
-            this.cmbSeans.Size = new System.Drawing.Size(229, 27);
-            this.cmbSeans.TabIndex = 5;
+            this.cmbFilm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilm.FormattingEnabled = true;
+            this.cmbFilm.Location = new System.Drawing.Point(64, 45);
+            this.cmbFilm.Name = "cmbFilm";
+            this.cmbFilm.Size = new System.Drawing.Size(229, 27);
+            this.cmbFilm.TabIndex = 1;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(3, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 19);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Seans :";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(14, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Film :";
             // 
             // groupBox2
             // 
@@ -229,6 +230,108 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Müşteri Bilgileri";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(188, 113);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(75, 23);
+            this.radioButton2.TabIndex = 15;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Normal";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // rbOgrenci
+            // 
+            this.rbOgrenci.AutoSize = true;
+            this.rbOgrenci.Location = new System.Drawing.Point(94, 113);
+            this.rbOgrenci.Name = "rbOgrenci";
+            this.rbOgrenci.Size = new System.Drawing.Size(77, 23);
+            this.rbOgrenci.TabIndex = 14;
+            this.rbOgrenci.TabStop = true;
+            this.rbOgrenci.Text = "Öğrenci";
+            this.rbOgrenci.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.Location = new System.Drawing.Point(20, 115);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(60, 19);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Durum :";
+            // 
+            // btnBiletKes
+            // 
+            this.btnBiletKes.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBiletKes.Location = new System.Drawing.Point(188, 309);
+            this.btnBiletKes.Name = "btnBiletKes";
+            this.btnBiletKes.Size = new System.Drawing.Size(105, 42);
+            this.btnBiletKes.TabIndex = 12;
+            this.btnBiletKes.Text = "Bilet Kes";
+            this.btnBiletKes.UseVisualStyleBackColor = true;
+            this.btnBiletKes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnBiletKes_MouseClick);
+            // 
+            // lblFiyat
+            // 
+            this.lblFiyat.AutoSize = true;
+            this.lblFiyat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblFiyat.Location = new System.Drawing.Point(94, 321);
+            this.lblFiyat.Name = "lblFiyat";
+            this.lblFiyat.Size = new System.Drawing.Size(48, 19);
+            this.lblFiyat.TabIndex = 11;
+            this.lblFiyat.Text = "Fiyat :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(24, 321);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 19);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Toplam :";
+            // 
+            // numericBiletAdet
+            // 
+            this.numericBiletAdet.Location = new System.Drawing.Point(95, 245);
+            this.numericBiletAdet.Name = "numericBiletAdet";
+            this.numericBiletAdet.Size = new System.Drawing.Size(198, 27);
+            this.numericBiletAdet.TabIndex = 9;
+            // 
+            // txtKoltuk
+            // 
+            this.txtKoltuk.Location = new System.Drawing.Point(95, 160);
+            this.txtKoltuk.Multiline = true;
+            this.txtKoltuk.Name = "txtKoltuk";
+            this.txtKoltuk.Size = new System.Drawing.Size(198, 64);
+            this.txtKoltuk.TabIndex = 8;
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Location = new System.Drawing.Point(95, 69);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(198, 27);
+            this.txtSoyad.TabIndex = 7;
+            // 
+            // txtAd
+            // 
+            this.txtAd.Location = new System.Drawing.Point(95, 26);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(198, 27);
+            this.txtAd.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(3, 247);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 19);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Bilet Adedi :";
             // 
             // label4
             // 
@@ -259,76 +362,6 @@
             this.label6.Size = new System.Drawing.Size(38, 19);
             this.label6.TabIndex = 0;
             this.label6.Text = " Ad :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(3, 247);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 19);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Bilet Adedi :";
-            // 
-            // txtAd
-            // 
-            this.txtAd.Location = new System.Drawing.Point(95, 26);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(198, 27);
-            this.txtAd.TabIndex = 6;
-            // 
-            // txtSoyad
-            // 
-            this.txtSoyad.Location = new System.Drawing.Point(95, 69);
-            this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(198, 27);
-            this.txtSoyad.TabIndex = 7;
-            // 
-            // txtKoltuk
-            // 
-            this.txtKoltuk.Location = new System.Drawing.Point(95, 160);
-            this.txtKoltuk.Multiline = true;
-            this.txtKoltuk.Name = "txtKoltuk";
-            this.txtKoltuk.Size = new System.Drawing.Size(198, 64);
-            this.txtKoltuk.TabIndex = 8;
-            // 
-            // numericBiletAdet
-            // 
-            this.numericBiletAdet.Location = new System.Drawing.Point(95, 245);
-            this.numericBiletAdet.Name = "numericBiletAdet";
-            this.numericBiletAdet.Size = new System.Drawing.Size(198, 27);
-            this.numericBiletAdet.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(24, 321);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 19);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Toplam :";
-            // 
-            // lblFiyat
-            // 
-            this.lblFiyat.AutoSize = true;
-            this.lblFiyat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblFiyat.Location = new System.Drawing.Point(94, 321);
-            this.lblFiyat.Name = "lblFiyat";
-            this.lblFiyat.Size = new System.Drawing.Size(48, 19);
-            this.lblFiyat.TabIndex = 11;
-            this.lblFiyat.Text = "Fiyat :";
-            // 
-            // btnBiletKes
-            // 
-            this.btnBiletKes.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBiletKes.Location = new System.Drawing.Point(188, 309);
-            this.btnBiletKes.Name = "btnBiletKes";
-            this.btnBiletKes.Size = new System.Drawing.Size(105, 42);
-            this.btnBiletKes.TabIndex = 12;
-            this.btnBiletKes.Text = "Bilet Kes";
-            this.btnBiletKes.UseVisualStyleBackColor = true;
-            this.btnBiletKes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnBiletKes_MouseClick);
             // 
             // groupBox3
             // 
@@ -411,344 +444,251 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Koltuk Seçimi";
             // 
-            // label10
+            // btn60
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Image = global::Sinema.Properties.Resources.perde;
-            this.label10.Location = new System.Drawing.Point(76, 34);
-            this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(250, 5, 250, 5);
-            this.label10.Size = new System.Drawing.Size(500, 29);
-            this.label10.TabIndex = 6;
+            this.btn60.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn60.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn60.Location = new System.Drawing.Point(527, 719);
+            this.btn60.Name = "btn60";
+            this.btn60.Size = new System.Drawing.Size(61, 48);
+            this.btn60.TabIndex = 82;
+            this.btn60.Text = "60";
+            this.btn60.UseVisualStyleBackColor = false;
+            this.btn60.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn1
+            // btn59
             // 
-            this.btn1.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn1.Location = new System.Drawing.Point(80, 98);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(61, 48);
-            this.btn1.TabIndex = 13;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn59.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn59.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn59.Location = new System.Drawing.Point(439, 719);
+            this.btn59.Name = "btn59";
+            this.btn59.Size = new System.Drawing.Size(61, 48);
+            this.btn59.TabIndex = 81;
+            this.btn59.Text = "59";
+            this.btn59.UseVisualStyleBackColor = false;
+            this.btn59.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // label11
+            // btn58
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(20, 110);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 26);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "A";
+            this.btn58.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn58.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn58.Location = new System.Drawing.Point(349, 719);
+            this.btn58.Name = "btn58";
+            this.btn58.Size = new System.Drawing.Size(61, 48);
+            this.btn58.TabIndex = 80;
+            this.btn58.Text = "58";
+            this.btn58.UseVisualStyleBackColor = false;
+            this.btn58.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn2
+            // btn57
             // 
-            this.btn2.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn2.Location = new System.Drawing.Point(168, 98);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(61, 48);
-            this.btn2.TabIndex = 15;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn57.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn57.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn57.Location = new System.Drawing.Point(261, 719);
+            this.btn57.Name = "btn57";
+            this.btn57.Size = new System.Drawing.Size(61, 48);
+            this.btn57.TabIndex = 79;
+            this.btn57.Text = "57";
+            this.btn57.UseVisualStyleBackColor = false;
+            this.btn57.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn4
+            // btn56
             // 
-            this.btn4.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn4.Location = new System.Drawing.Point(349, 98);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(61, 48);
-            this.btn4.TabIndex = 17;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn56.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn56.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn56.Location = new System.Drawing.Point(168, 719);
+            this.btn56.Name = "btn56";
+            this.btn56.Size = new System.Drawing.Size(61, 48);
+            this.btn56.TabIndex = 78;
+            this.btn56.Text = "56";
+            this.btn56.UseVisualStyleBackColor = false;
+            this.btn56.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn3
+            // label20
             // 
-            this.btn3.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn3.Location = new System.Drawing.Point(261, 98);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(61, 48);
-            this.btn3.TabIndex = 16;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label20.Location = new System.Drawing.Point(20, 731);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(23, 26);
+            this.label20.TabIndex = 77;
+            this.label20.Text = "K";
             // 
-            // btn6
+            // btn55
             // 
-            this.btn6.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn6.Location = new System.Drawing.Point(527, 98);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(61, 48);
-            this.btn6.TabIndex = 19;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn55.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn55.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn55.Location = new System.Drawing.Point(80, 719);
+            this.btn55.Name = "btn55";
+            this.btn55.Size = new System.Drawing.Size(61, 48);
+            this.btn55.TabIndex = 76;
+            this.btn55.Text = "55";
+            this.btn55.UseVisualStyleBackColor = false;
+            this.btn55.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn5
+            // btn54
             // 
-            this.btn5.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn5.Location = new System.Drawing.Point(439, 98);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(61, 48);
-            this.btn5.TabIndex = 18;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn54.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn54.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn54.Location = new System.Drawing.Point(527, 651);
+            this.btn54.Name = "btn54";
+            this.btn54.Size = new System.Drawing.Size(61, 48);
+            this.btn54.TabIndex = 75;
+            this.btn54.Text = "54";
+            this.btn54.UseVisualStyleBackColor = false;
+            this.btn54.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn12
+            // btn53
             // 
-            this.btn12.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn12.Location = new System.Drawing.Point(527, 169);
-            this.btn12.Name = "btn12";
-            this.btn12.Size = new System.Drawing.Size(61, 48);
-            this.btn12.TabIndex = 26;
-            this.btn12.Text = "12";
-            this.btn12.UseVisualStyleBackColor = false;
-            this.btn12.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn53.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn53.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn53.Location = new System.Drawing.Point(439, 651);
+            this.btn53.Name = "btn53";
+            this.btn53.Size = new System.Drawing.Size(61, 48);
+            this.btn53.TabIndex = 74;
+            this.btn53.Text = "53";
+            this.btn53.UseVisualStyleBackColor = false;
+            this.btn53.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn11
+            // btn52
             // 
-            this.btn11.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn11.Location = new System.Drawing.Point(439, 169);
-            this.btn11.Name = "btn11";
-            this.btn11.Size = new System.Drawing.Size(61, 48);
-            this.btn11.TabIndex = 25;
-            this.btn11.Text = "11";
-            this.btn11.UseVisualStyleBackColor = false;
-            this.btn11.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn52.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn52.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn52.Location = new System.Drawing.Point(349, 651);
+            this.btn52.Name = "btn52";
+            this.btn52.Size = new System.Drawing.Size(61, 48);
+            this.btn52.TabIndex = 73;
+            this.btn52.Text = "52";
+            this.btn52.UseVisualStyleBackColor = false;
+            this.btn52.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn10
+            // btn51
             // 
-            this.btn10.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn10.Location = new System.Drawing.Point(349, 169);
-            this.btn10.Name = "btn10";
-            this.btn10.Size = new System.Drawing.Size(61, 48);
-            this.btn10.TabIndex = 24;
-            this.btn10.Text = "10";
-            this.btn10.UseVisualStyleBackColor = false;
-            this.btn10.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn51.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn51.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn51.Location = new System.Drawing.Point(261, 651);
+            this.btn51.Name = "btn51";
+            this.btn51.Size = new System.Drawing.Size(61, 48);
+            this.btn51.TabIndex = 72;
+            this.btn51.Text = "51";
+            this.btn51.UseVisualStyleBackColor = false;
+            this.btn51.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn9
+            // btn50
             // 
-            this.btn9.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn9.Location = new System.Drawing.Point(261, 169);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(61, 48);
-            this.btn9.TabIndex = 23;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn50.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn50.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn50.Location = new System.Drawing.Point(168, 651);
+            this.btn50.Name = "btn50";
+            this.btn50.Size = new System.Drawing.Size(61, 48);
+            this.btn50.TabIndex = 71;
+            this.btn50.Text = "50";
+            this.btn50.UseVisualStyleBackColor = false;
+            this.btn50.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn8
+            // label15
             // 
-            this.btn8.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn8.Location = new System.Drawing.Point(168, 169);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(61, 48);
-            this.btn8.TabIndex = 22;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(20, 663);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 26);
+            this.label15.TabIndex = 70;
+            this.label15.Text = "I";
             // 
-            // label12
+            // btn49
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(20, 181);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(23, 26);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "B";
+            this.btn49.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn49.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn49.Location = new System.Drawing.Point(80, 651);
+            this.btn49.Name = "btn49";
+            this.btn49.Size = new System.Drawing.Size(61, 48);
+            this.btn49.TabIndex = 69;
+            this.btn49.Text = "49";
+            this.btn49.UseVisualStyleBackColor = false;
+            this.btn49.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn7
+            // btn48
             // 
-            this.btn7.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn7.Location = new System.Drawing.Point(80, 169);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(61, 48);
-            this.btn7.TabIndex = 20;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn48.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn48.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn48.Location = new System.Drawing.Point(527, 586);
+            this.btn48.Name = "btn48";
+            this.btn48.Size = new System.Drawing.Size(61, 48);
+            this.btn48.TabIndex = 68;
+            this.btn48.Text = "48";
+            this.btn48.UseVisualStyleBackColor = false;
+            this.btn48.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn24
+            // btn47
             // 
-            this.btn24.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn24.Location = new System.Drawing.Point(527, 305);
-            this.btn24.Name = "btn24";
-            this.btn24.Size = new System.Drawing.Size(61, 48);
-            this.btn24.TabIndex = 40;
-            this.btn24.Text = "24";
-            this.btn24.UseVisualStyleBackColor = false;
-            this.btn24.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn47.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn47.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn47.Location = new System.Drawing.Point(439, 586);
+            this.btn47.Name = "btn47";
+            this.btn47.Size = new System.Drawing.Size(61, 48);
+            this.btn47.TabIndex = 67;
+            this.btn47.Text = "47";
+            this.btn47.UseVisualStyleBackColor = false;
+            this.btn47.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn23
+            // btn46
             // 
-            this.btn23.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn23.Location = new System.Drawing.Point(439, 305);
-            this.btn23.Name = "btn23";
-            this.btn23.Size = new System.Drawing.Size(61, 48);
-            this.btn23.TabIndex = 39;
-            this.btn23.Text = "23";
-            this.btn23.UseVisualStyleBackColor = false;
-            this.btn23.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn46.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn46.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn46.Location = new System.Drawing.Point(349, 586);
+            this.btn46.Name = "btn46";
+            this.btn46.Size = new System.Drawing.Size(61, 48);
+            this.btn46.TabIndex = 66;
+            this.btn46.Text = "46";
+            this.btn46.UseVisualStyleBackColor = false;
+            this.btn46.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn22
+            // btn45
             // 
-            this.btn22.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn22.Location = new System.Drawing.Point(349, 305);
-            this.btn22.Name = "btn22";
-            this.btn22.Size = new System.Drawing.Size(61, 48);
-            this.btn22.TabIndex = 38;
-            this.btn22.Text = "22";
-            this.btn22.UseVisualStyleBackColor = false;
-            this.btn22.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn45.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn45.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn45.Location = new System.Drawing.Point(261, 586);
+            this.btn45.Name = "btn45";
+            this.btn45.Size = new System.Drawing.Size(61, 48);
+            this.btn45.TabIndex = 65;
+            this.btn45.Text = "45";
+            this.btn45.UseVisualStyleBackColor = false;
+            this.btn45.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn21
+            // btn44
             // 
-            this.btn21.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn21.Location = new System.Drawing.Point(261, 305);
-            this.btn21.Name = "btn21";
-            this.btn21.Size = new System.Drawing.Size(61, 48);
-            this.btn21.TabIndex = 37;
-            this.btn21.Text = "21";
-            this.btn21.UseVisualStyleBackColor = false;
-            this.btn21.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn44.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn44.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn44.Location = new System.Drawing.Point(168, 586);
+            this.btn44.Name = "btn44";
+            this.btn44.Size = new System.Drawing.Size(61, 48);
+            this.btn44.TabIndex = 64;
+            this.btn44.Text = "44";
+            this.btn44.UseVisualStyleBackColor = false;
+            this.btn44.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
-            // btn20
+            // label19
             // 
-            this.btn20.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn20.Location = new System.Drawing.Point(168, 305);
-            this.btn20.Name = "btn20";
-            this.btn20.Size = new System.Drawing.Size(61, 48);
-            this.btn20.TabIndex = 36;
-            this.btn20.Text = "20";
-            this.btn20.UseVisualStyleBackColor = false;
-            this.btn20.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label19.Location = new System.Drawing.Point(20, 598);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(25, 26);
+            this.label19.TabIndex = 63;
+            this.label19.Text = "H";
             // 
-            // label13
+            // btn43
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(20, 317);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(25, 26);
-            this.label13.TabIndex = 35;
-            this.label13.Text = "D";
-            // 
-            // btn19
-            // 
-            this.btn19.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn19.Location = new System.Drawing.Point(80, 305);
-            this.btn19.Name = "btn19";
-            this.btn19.Size = new System.Drawing.Size(61, 48);
-            this.btn19.TabIndex = 34;
-            this.btn19.Text = "19";
-            this.btn19.UseVisualStyleBackColor = false;
-            this.btn19.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn18
-            // 
-            this.btn18.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn18.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn18.Location = new System.Drawing.Point(527, 234);
-            this.btn18.Name = "btn18";
-            this.btn18.Size = new System.Drawing.Size(61, 48);
-            this.btn18.TabIndex = 33;
-            this.btn18.Text = "18";
-            this.btn18.UseVisualStyleBackColor = false;
-            this.btn18.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn17
-            // 
-            this.btn17.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn17.Location = new System.Drawing.Point(439, 234);
-            this.btn17.Name = "btn17";
-            this.btn17.Size = new System.Drawing.Size(61, 48);
-            this.btn17.TabIndex = 32;
-            this.btn17.Text = "17";
-            this.btn17.UseVisualStyleBackColor = false;
-            this.btn17.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn16
-            // 
-            this.btn16.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn16.Location = new System.Drawing.Point(349, 234);
-            this.btn16.Name = "btn16";
-            this.btn16.Size = new System.Drawing.Size(61, 48);
-            this.btn16.TabIndex = 31;
-            this.btn16.Text = "16";
-            this.btn16.UseVisualStyleBackColor = false;
-            this.btn16.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn15
-            // 
-            this.btn15.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn15.Location = new System.Drawing.Point(261, 234);
-            this.btn15.Name = "btn15";
-            this.btn15.Size = new System.Drawing.Size(61, 48);
-            this.btn15.TabIndex = 30;
-            this.btn15.Text = "15";
-            this.btn15.UseVisualStyleBackColor = false;
-            this.btn15.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn14
-            // 
-            this.btn14.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn14.Location = new System.Drawing.Point(168, 234);
-            this.btn14.Name = "btn14";
-            this.btn14.Size = new System.Drawing.Size(61, 48);
-            this.btn14.TabIndex = 29;
-            this.btn14.Text = "14";
-            this.btn14.UseVisualStyleBackColor = false;
-            this.btn14.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(20, 246);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(23, 26);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "C";
-            // 
-            // btn13
-            // 
-            this.btn13.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn13.Location = new System.Drawing.Point(80, 234);
-            this.btn13.Name = "btn13";
-            this.btn13.Size = new System.Drawing.Size(61, 48);
-            this.btn13.TabIndex = 27;
-            this.btn13.Text = "13";
-            this.btn13.UseVisualStyleBackColor = false;
-            this.btn13.Click += new System.EventHandler(this.btnKoltuk_Click);
+            this.btn43.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn43.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn43.Location = new System.Drawing.Point(80, 586);
+            this.btn43.Name = "btn43";
+            this.btn43.Size = new System.Drawing.Size(61, 48);
+            this.btn43.TabIndex = 62;
+            this.btn43.Text = "43";
+            this.btn43.UseVisualStyleBackColor = false;
+            this.btn43.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
             // btn42
             // 
@@ -996,6 +936,345 @@
             this.btn25.UseVisualStyleBackColor = false;
             this.btn25.Click += new System.EventHandler(this.btnKoltuk_Click);
             // 
+            // btn24
+            // 
+            this.btn24.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn24.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn24.Location = new System.Drawing.Point(527, 305);
+            this.btn24.Name = "btn24";
+            this.btn24.Size = new System.Drawing.Size(61, 48);
+            this.btn24.TabIndex = 40;
+            this.btn24.Text = "24";
+            this.btn24.UseVisualStyleBackColor = false;
+            this.btn24.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn23
+            // 
+            this.btn23.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn23.Location = new System.Drawing.Point(439, 305);
+            this.btn23.Name = "btn23";
+            this.btn23.Size = new System.Drawing.Size(61, 48);
+            this.btn23.TabIndex = 39;
+            this.btn23.Text = "23";
+            this.btn23.UseVisualStyleBackColor = false;
+            this.btn23.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn22
+            // 
+            this.btn22.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn22.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn22.Location = new System.Drawing.Point(349, 305);
+            this.btn22.Name = "btn22";
+            this.btn22.Size = new System.Drawing.Size(61, 48);
+            this.btn22.TabIndex = 38;
+            this.btn22.Text = "22";
+            this.btn22.UseVisualStyleBackColor = false;
+            this.btn22.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn21
+            // 
+            this.btn21.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn21.Location = new System.Drawing.Point(261, 305);
+            this.btn21.Name = "btn21";
+            this.btn21.Size = new System.Drawing.Size(61, 48);
+            this.btn21.TabIndex = 37;
+            this.btn21.Text = "21";
+            this.btn21.UseVisualStyleBackColor = false;
+            this.btn21.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn20
+            // 
+            this.btn20.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn20.Location = new System.Drawing.Point(168, 305);
+            this.btn20.Name = "btn20";
+            this.btn20.Size = new System.Drawing.Size(61, 48);
+            this.btn20.TabIndex = 36;
+            this.btn20.Text = "20";
+            this.btn20.UseVisualStyleBackColor = false;
+            this.btn20.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(20, 317);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(25, 26);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "D";
+            // 
+            // btn19
+            // 
+            this.btn19.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn19.Location = new System.Drawing.Point(80, 305);
+            this.btn19.Name = "btn19";
+            this.btn19.Size = new System.Drawing.Size(61, 48);
+            this.btn19.TabIndex = 34;
+            this.btn19.Text = "19";
+            this.btn19.UseVisualStyleBackColor = false;
+            this.btn19.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn18
+            // 
+            this.btn18.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn18.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn18.Location = new System.Drawing.Point(527, 234);
+            this.btn18.Name = "btn18";
+            this.btn18.Size = new System.Drawing.Size(61, 48);
+            this.btn18.TabIndex = 33;
+            this.btn18.Text = "18";
+            this.btn18.UseVisualStyleBackColor = false;
+            this.btn18.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn17
+            // 
+            this.btn17.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn17.Location = new System.Drawing.Point(439, 234);
+            this.btn17.Name = "btn17";
+            this.btn17.Size = new System.Drawing.Size(61, 48);
+            this.btn17.TabIndex = 32;
+            this.btn17.Text = "17";
+            this.btn17.UseVisualStyleBackColor = false;
+            this.btn17.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn16
+            // 
+            this.btn16.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn16.Location = new System.Drawing.Point(349, 234);
+            this.btn16.Name = "btn16";
+            this.btn16.Size = new System.Drawing.Size(61, 48);
+            this.btn16.TabIndex = 31;
+            this.btn16.Text = "16";
+            this.btn16.UseVisualStyleBackColor = false;
+            this.btn16.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn15
+            // 
+            this.btn15.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn15.Location = new System.Drawing.Point(261, 234);
+            this.btn15.Name = "btn15";
+            this.btn15.Size = new System.Drawing.Size(61, 48);
+            this.btn15.TabIndex = 30;
+            this.btn15.Text = "15";
+            this.btn15.UseVisualStyleBackColor = false;
+            this.btn15.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn14
+            // 
+            this.btn14.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn14.Location = new System.Drawing.Point(168, 234);
+            this.btn14.Name = "btn14";
+            this.btn14.Size = new System.Drawing.Size(61, 48);
+            this.btn14.TabIndex = 29;
+            this.btn14.Text = "14";
+            this.btn14.UseVisualStyleBackColor = false;
+            this.btn14.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(20, 246);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 26);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "C";
+            // 
+            // btn13
+            // 
+            this.btn13.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn13.Location = new System.Drawing.Point(80, 234);
+            this.btn13.Name = "btn13";
+            this.btn13.Size = new System.Drawing.Size(61, 48);
+            this.btn13.TabIndex = 27;
+            this.btn13.Text = "13";
+            this.btn13.UseVisualStyleBackColor = false;
+            this.btn13.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn12
+            // 
+            this.btn12.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn12.Location = new System.Drawing.Point(527, 169);
+            this.btn12.Name = "btn12";
+            this.btn12.Size = new System.Drawing.Size(61, 48);
+            this.btn12.TabIndex = 26;
+            this.btn12.Text = "12";
+            this.btn12.UseVisualStyleBackColor = false;
+            this.btn12.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn11
+            // 
+            this.btn11.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn11.Location = new System.Drawing.Point(439, 169);
+            this.btn11.Name = "btn11";
+            this.btn11.Size = new System.Drawing.Size(61, 48);
+            this.btn11.TabIndex = 25;
+            this.btn11.Text = "11";
+            this.btn11.UseVisualStyleBackColor = false;
+            this.btn11.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn10
+            // 
+            this.btn10.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn10.Location = new System.Drawing.Point(349, 169);
+            this.btn10.Name = "btn10";
+            this.btn10.Size = new System.Drawing.Size(61, 48);
+            this.btn10.TabIndex = 24;
+            this.btn10.Text = "10";
+            this.btn10.UseVisualStyleBackColor = false;
+            this.btn10.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn9
+            // 
+            this.btn9.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn9.Location = new System.Drawing.Point(261, 169);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(61, 48);
+            this.btn9.TabIndex = 23;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn8
+            // 
+            this.btn8.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn8.Location = new System.Drawing.Point(168, 169);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(61, 48);
+            this.btn8.TabIndex = 22;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(20, 181);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 26);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "B";
+            // 
+            // btn7
+            // 
+            this.btn7.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn7.Location = new System.Drawing.Point(80, 169);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(61, 48);
+            this.btn7.TabIndex = 20;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn6
+            // 
+            this.btn6.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn6.Location = new System.Drawing.Point(527, 98);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(61, 48);
+            this.btn6.TabIndex = 19;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn5
+            // 
+            this.btn5.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn5.Location = new System.Drawing.Point(439, 98);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(61, 48);
+            this.btn5.TabIndex = 18;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn4.Location = new System.Drawing.Point(349, 98);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(61, 48);
+            this.btn4.TabIndex = 17;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn3
+            // 
+            this.btn3.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn3.Location = new System.Drawing.Point(261, 98);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(61, 48);
+            this.btn3.TabIndex = 16;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn2.Location = new System.Drawing.Point(168, 98);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(61, 48);
+            this.btn2.TabIndex = 15;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(20, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 26);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "A";
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn1.Location = new System.Drawing.Point(80, 98);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(61, 48);
+            this.btn1.TabIndex = 13;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btnKoltuk_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Image = global::Sinema.Properties.Resources.perde;
+            this.label10.Location = new System.Drawing.Point(76, 34);
+            this.label10.Name = "label10";
+            this.label10.Padding = new System.Windows.Forms.Padding(250, 5, 250, 5);
+            this.label10.Size = new System.Drawing.Size(500, 29);
+            this.label10.TabIndex = 6;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnIptal);
@@ -1008,6 +1287,17 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Bilet İptal";
+            // 
+            // btnIptal
+            // 
+            this.btnIptal.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIptal.Location = new System.Drawing.Point(178, 87);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(115, 42);
+            this.btnIptal.TabIndex = 13;
+            this.btnIptal.Text = "İptal Et";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // txtiptalKoltuk
             // 
@@ -1027,294 +1317,6 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Koltuk :";
             // 
-            // btnIptal
-            // 
-            this.btnIptal.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIptal.Location = new System.Drawing.Point(178, 87);
-            this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(115, 42);
-            this.btnIptal.TabIndex = 13;
-            this.btnIptal.Text = "İptal Et";
-            this.btnIptal.UseVisualStyleBackColor = true;
-            // 
-            // btn54
-            // 
-            this.btn54.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn54.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn54.Location = new System.Drawing.Point(527, 651);
-            this.btn54.Name = "btn54";
-            this.btn54.Size = new System.Drawing.Size(61, 48);
-            this.btn54.TabIndex = 75;
-            this.btn54.Text = "54";
-            this.btn54.UseVisualStyleBackColor = false;
-            this.btn54.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn53
-            // 
-            this.btn53.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn53.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn53.Location = new System.Drawing.Point(439, 651);
-            this.btn53.Name = "btn53";
-            this.btn53.Size = new System.Drawing.Size(61, 48);
-            this.btn53.TabIndex = 74;
-            this.btn53.Text = "53";
-            this.btn53.UseVisualStyleBackColor = false;
-            this.btn53.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn52
-            // 
-            this.btn52.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn52.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn52.Location = new System.Drawing.Point(349, 651);
-            this.btn52.Name = "btn52";
-            this.btn52.Size = new System.Drawing.Size(61, 48);
-            this.btn52.TabIndex = 73;
-            this.btn52.Text = "52";
-            this.btn52.UseVisualStyleBackColor = false;
-            this.btn52.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn51
-            // 
-            this.btn51.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn51.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn51.Location = new System.Drawing.Point(261, 651);
-            this.btn51.Name = "btn51";
-            this.btn51.Size = new System.Drawing.Size(61, 48);
-            this.btn51.TabIndex = 72;
-            this.btn51.Text = "51";
-            this.btn51.UseVisualStyleBackColor = false;
-            this.btn51.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn50
-            // 
-            this.btn50.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn50.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn50.Location = new System.Drawing.Point(168, 651);
-            this.btn50.Name = "btn50";
-            this.btn50.Size = new System.Drawing.Size(61, 48);
-            this.btn50.TabIndex = 71;
-            this.btn50.Text = "50";
-            this.btn50.UseVisualStyleBackColor = false;
-            this.btn50.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(20, 663);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 26);
-            this.label15.TabIndex = 70;
-            this.label15.Text = "I";
-            // 
-            // btn49
-            // 
-            this.btn49.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn49.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn49.Location = new System.Drawing.Point(80, 651);
-            this.btn49.Name = "btn49";
-            this.btn49.Size = new System.Drawing.Size(61, 48);
-            this.btn49.TabIndex = 69;
-            this.btn49.Text = "49";
-            this.btn49.UseVisualStyleBackColor = false;
-            this.btn49.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn48
-            // 
-            this.btn48.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn48.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn48.Location = new System.Drawing.Point(527, 586);
-            this.btn48.Name = "btn48";
-            this.btn48.Size = new System.Drawing.Size(61, 48);
-            this.btn48.TabIndex = 68;
-            this.btn48.Text = "48";
-            this.btn48.UseVisualStyleBackColor = false;
-            this.btn48.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn47
-            // 
-            this.btn47.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn47.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn47.Location = new System.Drawing.Point(439, 586);
-            this.btn47.Name = "btn47";
-            this.btn47.Size = new System.Drawing.Size(61, 48);
-            this.btn47.TabIndex = 67;
-            this.btn47.Text = "47";
-            this.btn47.UseVisualStyleBackColor = false;
-            this.btn47.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn46
-            // 
-            this.btn46.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn46.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn46.Location = new System.Drawing.Point(349, 586);
-            this.btn46.Name = "btn46";
-            this.btn46.Size = new System.Drawing.Size(61, 48);
-            this.btn46.TabIndex = 66;
-            this.btn46.Text = "46";
-            this.btn46.UseVisualStyleBackColor = false;
-            this.btn46.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn45
-            // 
-            this.btn45.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn45.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn45.Location = new System.Drawing.Point(261, 586);
-            this.btn45.Name = "btn45";
-            this.btn45.Size = new System.Drawing.Size(61, 48);
-            this.btn45.TabIndex = 65;
-            this.btn45.Text = "45";
-            this.btn45.UseVisualStyleBackColor = false;
-            this.btn45.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn44
-            // 
-            this.btn44.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn44.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn44.Location = new System.Drawing.Point(168, 586);
-            this.btn44.Name = "btn44";
-            this.btn44.Size = new System.Drawing.Size(61, 48);
-            this.btn44.TabIndex = 64;
-            this.btn44.Text = "44";
-            this.btn44.UseVisualStyleBackColor = false;
-            this.btn44.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(20, 598);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(25, 26);
-            this.label19.TabIndex = 63;
-            this.label19.Text = "H";
-            // 
-            // btn43
-            // 
-            this.btn43.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn43.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn43.Location = new System.Drawing.Point(80, 586);
-            this.btn43.Name = "btn43";
-            this.btn43.Size = new System.Drawing.Size(61, 48);
-            this.btn43.TabIndex = 62;
-            this.btn43.Text = "43";
-            this.btn43.UseVisualStyleBackColor = false;
-            this.btn43.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn60
-            // 
-            this.btn60.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn60.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn60.Location = new System.Drawing.Point(527, 719);
-            this.btn60.Name = "btn60";
-            this.btn60.Size = new System.Drawing.Size(61, 48);
-            this.btn60.TabIndex = 82;
-            this.btn60.Text = "60";
-            this.btn60.UseVisualStyleBackColor = false;
-            this.btn60.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn59
-            // 
-            this.btn59.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn59.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn59.Location = new System.Drawing.Point(439, 719);
-            this.btn59.Name = "btn59";
-            this.btn59.Size = new System.Drawing.Size(61, 48);
-            this.btn59.TabIndex = 81;
-            this.btn59.Text = "59";
-            this.btn59.UseVisualStyleBackColor = false;
-            this.btn59.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn58
-            // 
-            this.btn58.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn58.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn58.Location = new System.Drawing.Point(349, 719);
-            this.btn58.Name = "btn58";
-            this.btn58.Size = new System.Drawing.Size(61, 48);
-            this.btn58.TabIndex = 80;
-            this.btn58.Text = "58";
-            this.btn58.UseVisualStyleBackColor = false;
-            this.btn58.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn57
-            // 
-            this.btn57.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn57.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn57.Location = new System.Drawing.Point(261, 719);
-            this.btn57.Name = "btn57";
-            this.btn57.Size = new System.Drawing.Size(61, 48);
-            this.btn57.TabIndex = 79;
-            this.btn57.Text = "57";
-            this.btn57.UseVisualStyleBackColor = false;
-            this.btn57.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // btn56
-            // 
-            this.btn56.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn56.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn56.Location = new System.Drawing.Point(168, 719);
-            this.btn56.Name = "btn56";
-            this.btn56.Size = new System.Drawing.Size(61, 48);
-            this.btn56.TabIndex = 78;
-            this.btn56.Text = "56";
-            this.btn56.UseVisualStyleBackColor = false;
-            this.btn56.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(20, 731);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(23, 26);
-            this.label20.TabIndex = 77;
-            this.label20.Text = "K";
-            // 
-            // btn55
-            // 
-            this.btn55.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn55.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn55.Location = new System.Drawing.Point(80, 719);
-            this.btn55.Name = "btn55";
-            this.btn55.Size = new System.Drawing.Size(61, 48);
-            this.btn55.TabIndex = 76;
-            this.btn55.Text = "55";
-            this.btn55.UseVisualStyleBackColor = false;
-            this.btn55.Click += new System.EventHandler(this.btnKoltuk_Click);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(20, 115);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(60, 19);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "Durum :";
-            // 
-            // rbOgrenci
-            // 
-            this.rbOgrenci.AutoSize = true;
-            this.rbOgrenci.Location = new System.Drawing.Point(94, 113);
-            this.rbOgrenci.Name = "rbOgrenci";
-            this.rbOgrenci.Size = new System.Drawing.Size(77, 23);
-            this.rbOgrenci.TabIndex = 14;
-            this.rbOgrenci.TabStop = true;
-            this.rbOgrenci.Text = "Öğrenci";
-            this.rbOgrenci.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(188, 113);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 23);
-            this.radioButton2.TabIndex = 15;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Normal";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // Biletci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1324,6 +1326,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1069, 861);
             this.MinimumSize = new System.Drawing.Size(1069, 861);
             this.Name = "Biletci";

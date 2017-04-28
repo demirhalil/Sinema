@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using BusinessLogicLayer;
 using System.Collections;
 using EntityLayer;
+using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using FacadeLayer;
 
 namespace Sinema
 {
@@ -164,14 +168,11 @@ namespace Sinema
 
             else ucret = 10;
 
-           
-
-
+            EBILET item = new EBILET();
 
             for (int i = 0; i < koltuklar.Count; i++)
 
-            {
-                EBILET item = new EBILET();
+            {               
                 item.FilmID = Convert.ToInt32(cmbFilm.SelectedValue);
                 item.SalonID = Convert.ToInt32(cmbSalon.SelectedValue);
                 item.SeansID = Convert.ToInt32(cmbSeans.SelectedValue);
@@ -180,20 +181,90 @@ namespace Sinema
                 item.Koltuk = txtKoltuk.Text;
                 item.BiletAdet = Convert.ToInt32(numericBiletAdet.Value);
                 item.Ucret = Convert.ToDecimal(koltuklar.Count * ucret);
-                BLLBILETCI.Bilet_Insert(item);
 
                 this.Controls.Find("btn" + koltuklar[i].ToString(), true)[0].BackColor = Color.Red;
-
-
             }
 
+            BLLBILETCI.Bilet_Insert(item);
 
+            if (BLLBILETCI.Bilet_Insert(item) < 0)
+            {
+                MessageBox.Show("Bilet alma işlemi gerçekleştirilemedi. Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                for (int i = 0; i < koltuklar.Count; i++)
+
+                {
+                    this.Controls.Find("btn" + koltuklar[i].ToString(), true)[0].BackColor = Color.Chartreuse;
+                }
+
+            }
+            else
+            {
+
+                MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtAd.Clear();
+                txtSoyad.Clear();
+                txtKoltuk.Clear();
+                numericBiletAdet.Value = 0;
+            }
 
         }
 
         private void btnBiletKes_MouseClick(object sender, MouseEventArgs e)
         {
-            biletAyir();
+            biletAyir();         
         }
+
+        private void btnIptal_Click(object sender, EventArgs e)
+        {
+            EBILET item = new EBILET();
+            //string koltuk;
+
+                for (int i = 0; i < iptalKoltuk.Count; i++)
+
+                {
+                 //koltuk = iptalKoltuk[i].ToString() + ",";
+                    //BLLBILETCI.Bilet_Delete(Convert.ToInt32(iptalKoltuk[i]));
+                    this.Controls.Find("btn" + iptalKoltuk[i].ToString(), true)[0].BackColor = Color.Chartreuse;
+                }
+
+            FBAGLANTI.Baglan = new SqlConnection("Data Source=.;Initial Catalog=SINEMA;Integrated Security=True");
+            SqlCommand com = new SqlCommand("SELECT *FROM Bilet WHERE Koltuk ='"+txtiptalKoltuk.Text+"'", FBAGLANTI.Baglan);
+            FBAGLANTI.Baglan.Open();
+            SqlDataReader dr = com.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    item.BiletID = Convert.ToInt32(dr["BiletID"]);
+                    item.FilmID = Convert.ToInt32(dr["FilmID"]);
+                    item.SalonID = Convert.ToInt32(dr["SalonID"]);
+                    item.SeansID = Convert.ToInt32(dr["SeansID"]);
+                    item.MusteriAd = dr["MusteriAd"].ToString();
+                    item.MusteriSoyad = dr["MusteriSoyad"].ToString();
+                    item.Koltuk = dr["Koltuk"].ToString();
+                    item.BiletAdet = Convert.ToInt32(dr["BiletAdet"]);
+                }
+            }
+
+            BLLBILETCI.Bilet_Delete(item.BiletID);
+            dr.Close();
+            com.Dispose();
+            FBAGLANTI.Baglan.Close();
+            FBAGLANTI.Baglan.Dispose();
+
+
+
+            iptalKoltuk.Clear();//www.gorselprogramlama.com
+
+                txtiptalKoltuk.Text = "";
+
+                txtAd.Text = "";
+
+                txtSoyad.Text = "";
+
+        }
+
+
     }
 }
+
