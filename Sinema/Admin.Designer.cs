@@ -169,7 +169,7 @@
             this.groupBox2.Location = new System.Drawing.Point(17, 300);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(882, 346);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Film Bilgileri";
             // 
@@ -177,6 +177,7 @@
             // 
             this.dataGridViewFilm.AllowUserToAddRows = false;
             this.dataGridViewFilm.AllowUserToDeleteRows = false;
+            this.dataGridViewFilm.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewFilm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFilm.Location = new System.Drawing.Point(10, 26);
             this.dataGridViewFilm.MultiSelect = false;
@@ -184,7 +185,7 @@
             this.dataGridViewFilm.ReadOnly = true;
             this.dataGridViewFilm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewFilm.Size = new System.Drawing.Size(872, 314);
-            this.dataGridViewFilm.TabIndex = 2;
+            this.dataGridViewFilm.TabIndex = 17;
             this.dataGridViewFilm.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewFilm_CellMouseClick);
             // 
             // groupBox1
@@ -385,7 +386,7 @@
             this.groupBox3.Location = new System.Drawing.Point(6, 316);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(920, 325);
-            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Salon Bilgileri";
             // 
@@ -393,6 +394,7 @@
             // 
             this.dataGridViewSalon.AllowUserToAddRows = false;
             this.dataGridViewSalon.AllowUserToDeleteRows = false;
+            this.dataGridViewSalon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewSalon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSalon.Location = new System.Drawing.Point(10, 26);
             this.dataGridViewSalon.MultiSelect = false;
@@ -400,7 +402,7 @@
             this.dataGridViewSalon.ReadOnly = true;
             this.dataGridViewSalon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSalon.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewSalon.TabIndex = 2;
+            this.dataGridViewSalon.TabIndex = 7;
             this.dataGridViewSalon.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSalon_CellMouseClick);
             // 
             // groupBox4
@@ -416,7 +418,7 @@
             this.groupBox4.Location = new System.Drawing.Point(6, 18);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(920, 271);
-            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Salon Ekleme,Güncelleme,Silme";
             // 
@@ -426,7 +428,7 @@
             this.btnSalonSil.Location = new System.Drawing.Point(362, 152);
             this.btnSalonSil.Name = "btnSalonSil";
             this.btnSalonSil.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonSil.TabIndex = 15;
+            this.btnSalonSil.TabIndex = 5;
             this.btnSalonSil.Text = "Sil";
             this.btnSalonSil.UseVisualStyleBackColor = true;
             this.btnSalonSil.Click += new System.EventHandler(this.btnSalonSil_Click);
@@ -437,7 +439,7 @@
             this.btnSalonGuncelle.Location = new System.Drawing.Point(233, 152);
             this.btnSalonGuncelle.Name = "btnSalonGuncelle";
             this.btnSalonGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonGuncelle.TabIndex = 8;
+            this.btnSalonGuncelle.TabIndex = 4;
             this.btnSalonGuncelle.Text = "Güncelle";
             this.btnSalonGuncelle.UseVisualStyleBackColor = true;
             this.btnSalonGuncelle.Click += new System.EventHandler(this.btnSalonGuncelle_Click);
@@ -448,7 +450,7 @@
             this.btnSalonEkle.Location = new System.Drawing.Point(100, 152);
             this.btnSalonEkle.Name = "btnSalonEkle";
             this.btnSalonEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonEkle.TabIndex = 7;
+            this.btnSalonEkle.TabIndex = 3;
             this.btnSalonEkle.Text = "Salon Ekle";
             this.btnSalonEkle.UseVisualStyleBackColor = true;
             this.btnSalonEkle.Click += new System.EventHandler(this.btnSalonEkle_Click);
@@ -458,7 +460,7 @@
             this.txtSalonKapasite.Location = new System.Drawing.Point(100, 92);
             this.txtSalonKapasite.Name = "txtSalonKapasite";
             this.txtSalonKapasite.Size = new System.Drawing.Size(367, 27);
-            this.txtSalonKapasite.TabIndex = 1;
+            this.txtSalonKapasite.TabIndex = 2;
             // 
             // label10
             // 
@@ -475,7 +477,7 @@
             this.txtSalonAd.Location = new System.Drawing.Point(100, 45);
             this.txtSalonAd.Name = "txtSalonAd";
             this.txtSalonAd.Size = new System.Drawing.Size(367, 27);
-            this.txtSalonAd.TabIndex = 0;
+            this.txtSalonAd.TabIndex = 1;
             // 
             // label12
             // 
@@ -494,7 +496,7 @@
             this.groupBox5.Location = new System.Drawing.Point(25, 313);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(920, 325);
-            this.groupBox5.TabIndex = 7;
+            this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Seans Bilgileri";
             // 
@@ -502,6 +504,7 @@
             // 
             this.dataGridViewSeans.AllowUserToAddRows = false;
             this.dataGridViewSeans.AllowUserToDeleteRows = false;
+            this.dataGridViewSeans.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewSeans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSeans.Location = new System.Drawing.Point(10, 26);
             this.dataGridViewSeans.MultiSelect = false;
@@ -509,7 +512,7 @@
             this.dataGridViewSeans.ReadOnly = true;
             this.dataGridViewSeans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSeans.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewSeans.TabIndex = 2;
+            this.dataGridViewSeans.TabIndex = 6;
             this.dataGridViewSeans.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSeans_CellMouseClick);
             // 
             // groupBox6
@@ -523,7 +526,7 @@
             this.groupBox6.Location = new System.Drawing.Point(25, 15);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(920, 245);
-            this.groupBox6.TabIndex = 6;
+            this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Seans Ekleme,Güncelleme,Silme";
             // 
@@ -533,7 +536,7 @@
             this.btnSeansSil.Location = new System.Drawing.Point(382, 123);
             this.btnSeansSil.Name = "btnSeansSil";
             this.btnSeansSil.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansSil.TabIndex = 15;
+            this.btnSeansSil.TabIndex = 4;
             this.btnSeansSil.Text = "Sil";
             this.btnSeansSil.UseVisualStyleBackColor = true;
             this.btnSeansSil.Click += new System.EventHandler(this.btnSeansSil_Click);
@@ -544,7 +547,7 @@
             this.btnSeansGuncelle.Location = new System.Drawing.Point(249, 123);
             this.btnSeansGuncelle.Name = "btnSeansGuncelle";
             this.btnSeansGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansGuncelle.TabIndex = 8;
+            this.btnSeansGuncelle.TabIndex = 3;
             this.btnSeansGuncelle.Text = "Güncelle";
             this.btnSeansGuncelle.UseVisualStyleBackColor = true;
             this.btnSeansGuncelle.Click += new System.EventHandler(this.btnSeansGuncelle_Click);
@@ -555,7 +558,7 @@
             this.btnSeansEkle.Location = new System.Drawing.Point(120, 123);
             this.btnSeansEkle.Name = "btnSeansEkle";
             this.btnSeansEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansEkle.TabIndex = 7;
+            this.btnSeansEkle.TabIndex = 2;
             this.btnSeansEkle.Text = "Seans Ekle";
             this.btnSeansEkle.UseVisualStyleBackColor = true;
             this.btnSeansEkle.Click += new System.EventHandler(this.btnSeansEkle_Click);
@@ -565,7 +568,7 @@
             this.txtSeansSaati.Location = new System.Drawing.Point(120, 58);
             this.txtSeansSaati.Name = "txtSeansSaati";
             this.txtSeansSaati.Size = new System.Drawing.Size(367, 27);
-            this.txtSeansSaati.TabIndex = 0;
+            this.txtSeansSaati.TabIndex = 1;
             // 
             // label8
             // 
@@ -584,7 +587,7 @@
             this.groupBox7.Location = new System.Drawing.Point(25, 313);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(920, 325);
-            this.groupBox7.TabIndex = 9;
+            this.groupBox7.TabIndex = 13;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Çalışan Bilgileri";
             // 
@@ -592,6 +595,7 @@
             // 
             this.dataGridViewCalisan.AllowUserToAddRows = false;
             this.dataGridViewCalisan.AllowUserToDeleteRows = false;
+            this.dataGridViewCalisan.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCalisan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCalisan.Location = new System.Drawing.Point(10, 26);
             this.dataGridViewCalisan.MultiSelect = false;
@@ -599,7 +603,7 @@
             this.dataGridViewCalisan.ReadOnly = true;
             this.dataGridViewCalisan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCalisan.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewCalisan.TabIndex = 2;
+            this.dataGridViewCalisan.TabIndex = 14;
             this.dataGridViewCalisan.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCalisan_CellMouseClick);
             // 
             // groupBox8
@@ -628,7 +632,7 @@
             this.groupBox8.Location = new System.Drawing.Point(25, 15);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(920, 277);
-            this.groupBox8.TabIndex = 8;
+            this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Çalışan Ekleme,Güncelleme,Silme";
             // 
@@ -638,7 +642,7 @@
             this.btnCalisanSil.Location = new System.Drawing.Point(751, 212);
             this.btnCalisanSil.Name = "btnCalisanSil";
             this.btnCalisanSil.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanSil.TabIndex = 15;
+            this.btnCalisanSil.TabIndex = 12;
             this.btnCalisanSil.Text = "Sil";
             this.btnCalisanSil.UseVisualStyleBackColor = true;
             this.btnCalisanSil.Click += new System.EventHandler(this.btnCalisanSil_Click);
@@ -649,7 +653,7 @@
             this.btnCalisanGuncelle.Location = new System.Drawing.Point(612, 212);
             this.btnCalisanGuncelle.Name = "btnCalisanGuncelle";
             this.btnCalisanGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanGuncelle.TabIndex = 8;
+            this.btnCalisanGuncelle.TabIndex = 11;
             this.btnCalisanGuncelle.Text = "Güncelle";
             this.btnCalisanGuncelle.UseVisualStyleBackColor = true;
             this.btnCalisanGuncelle.Click += new System.EventHandler(this.btnCalisanGuncelle_Click);
@@ -660,7 +664,7 @@
             this.btnCalisanEkle.Location = new System.Drawing.Point(477, 212);
             this.btnCalisanEkle.Name = "btnCalisanEkle";
             this.btnCalisanEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanEkle.TabIndex = 7;
+            this.btnCalisanEkle.TabIndex = 10;
             this.btnCalisanEkle.Text = "Çalışan Ekle";
             this.btnCalisanEkle.UseVisualStyleBackColor = true;
             this.btnCalisanEkle.Click += new System.EventHandler(this.btnCalisanEkle_Click);
@@ -670,7 +674,7 @@
             this.txtAd.Location = new System.Drawing.Point(129, 37);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(214, 27);
-            this.txtAd.TabIndex = 0;
+            this.txtAd.TabIndex = 1;
             // 
             // label3
             // 
@@ -687,7 +691,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(129, 79);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(214, 27);
-            this.txtSoyad.TabIndex = 16;
+            this.txtSoyad.TabIndex = 2;
             // 
             // label9
             // 
@@ -704,7 +708,7 @@
             this.txtKullaniciParola.Location = new System.Drawing.Point(129, 166);
             this.txtKullaniciParola.Name = "txtKullaniciParola";
             this.txtKullaniciParola.Size = new System.Drawing.Size(214, 27);
-            this.txtKullaniciParola.TabIndex = 20;
+            this.txtKullaniciParola.TabIndex = 4;
             // 
             // label11
             // 
@@ -721,7 +725,7 @@
             this.txtKullaniciAd.Location = new System.Drawing.Point(129, 122);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Size = new System.Drawing.Size(214, 27);
-            this.txtKullaniciAd.TabIndex = 18;
+            this.txtKullaniciAd.TabIndex = 3;
             // 
             // label13
             // 
@@ -738,7 +742,7 @@
             this.txtTC.Location = new System.Drawing.Point(582, 37);
             this.txtTC.Name = "txtTC";
             this.txtTC.Size = new System.Drawing.Size(256, 27);
-            this.txtTC.TabIndex = 22;
+            this.txtTC.TabIndex = 5;
             // 
             // label14
             // 
@@ -775,14 +779,14 @@
             this.dateTimeDogumTarih.Location = new System.Drawing.Point(582, 77);
             this.dateTimeDogumTarih.Name = "dateTimeDogumTarih";
             this.dateTimeDogumTarih.Size = new System.Drawing.Size(256, 27);
-            this.dateTimeDogumTarih.TabIndex = 27;
+            this.dateTimeDogumTarih.TabIndex = 6;
             // 
             // dateTimeIseGirisTarih
             // 
             this.dateTimeIseGirisTarih.Location = new System.Drawing.Point(582, 116);
             this.dateTimeIseGirisTarih.Name = "dateTimeIseGirisTarih";
             this.dateTimeIseGirisTarih.Size = new System.Drawing.Size(256, 27);
-            this.dateTimeIseGirisTarih.TabIndex = 28;
+            this.dateTimeIseGirisTarih.TabIndex = 7;
             // 
             // label17
             // 
@@ -800,7 +804,7 @@
             this.rdbAdmin.Location = new System.Drawing.Point(582, 162);
             this.rdbAdmin.Name = "rdbAdmin";
             this.rdbAdmin.Size = new System.Drawing.Size(48, 23);
-            this.rdbAdmin.TabIndex = 30;
+            this.rdbAdmin.TabIndex = 8;
             this.rdbAdmin.TabStop = true;
             this.rdbAdmin.Text = "Var";
             this.rdbAdmin.UseVisualStyleBackColor = true;
@@ -811,7 +815,7 @@
             this.rdbAdminDegil.Location = new System.Drawing.Point(727, 162);
             this.rdbAdminDegil.Name = "rdbAdminDegil";
             this.rdbAdminDegil.Size = new System.Drawing.Size(49, 23);
-            this.rdbAdminDegil.TabIndex = 31;
+            this.rdbAdminDegil.TabIndex = 9;
             this.rdbAdminDegil.TabStop = true;
             this.rdbAdminDegil.Text = "Yok";
             this.rdbAdminDegil.UseVisualStyleBackColor = true;

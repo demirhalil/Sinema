@@ -27,31 +27,146 @@ namespace Sinema
         ArrayList koltuklar = new ArrayList();
         ArrayList iptalKoltuk = new ArrayList();
 
-        private void Biletci_Load(object sender, EventArgs e)
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataTable dtFilm = new DataTable();
+            if (tabControl1.SelectedIndex == 1)
+            {
+                biletCek();
+                iptalFilmCek();
+                iptalSalonCek();
+                iptalSeansCek();
+            }
+
+            else
+            {
+                doluKoltuklariCek();
+            }
+        }
+
+        //Veritabanından Bilet,Film,Salon,Seans verileri çekildi.Bilet Kes tab için.
+        private void biletCek()
+        {
+            DataTable dt = new DataTable();
+            dt = BLLBILETCI.getDataTableBilet();
+            dt.Columns["FilmID"].ColumnName = "Filmin Numarası";
+            dt.Columns["SalonID"].ColumnName = "Salonun Numarası";
+            dt.Columns["SeansID"].ColumnName = "Seans Numarası";
+            dt.Columns["MusteriAd"].ColumnName = "Müşteri Ad";
+            dt.Columns["MusteriSoyad"].ColumnName = "Müşteri Soyad";
+            dt.Columns["Koltuk"].ColumnName = "Koltuk Numaraları";
+            dt.Columns["BiletAdet"].ColumnName = "Bilet Adedi";
+            dt.Columns["Ucret"].ColumnName = "Ücret";
+
+            dataGridViewBilet.DataSource = dt;
+            dataGridViewBilet.Columns["BiletID"].Visible = false;
+            dataGridViewBilet.Columns["Filmin Numarası"].Width = 100;
+            dataGridViewBilet.Columns["Salonun Numarası"].Width = 100;
+            dataGridViewBilet.Columns["Seans Numarası"].Width = 100;
+            dataGridViewBilet.Columns["Müşteri Ad"].Width = 100;
+            dataGridViewBilet.Columns["Müşteri Soyad"].Width = 100;
+            dataGridViewBilet.Columns["Koltuk Numaraları"].Width = 150;
+            dataGridViewBilet.Columns["Bilet Adedi"].Width = 100;
+            dataGridViewBilet.Columns["Ücret"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
+        private void salonCek()
+        {
             DataTable dtSalon = new DataTable();
-            DataTable dtSeans = new DataTable();
-
-            dtFilm = BLLADMIN.getDataTableFilm();
             dtSalon = BLLADMIN.getDataTableSalon();
-            dtSeans = BLLADMIN.getDataTableSeans();
-
-            cmbFilm.DataSource = dtFilm;
-            cmbFilm.DisplayMember = dtFilm.Columns["FilmAd"].ToString();
-            cmbFilm.ValueMember = dtFilm.Columns["FilmID"].ToString();
 
             cmbSalon.DataSource = dtSalon;
             cmbSalon.DisplayMember = dtSalon.Columns["SalonAd"].ToString();
             cmbSalon.ValueMember = dtSalon.Columns["SalonID"].ToString();
+        }
+
+        private void seansCek()
+        {
+            DataTable dtSeans = new DataTable();
+            dtSeans = BLLADMIN.getDataTableSeans();
 
             cmbSeans.DataSource = dtSeans;
             cmbSeans.DisplayMember = dtSeans.Columns["SeansSaat"].ToString();
             cmbSeans.ValueMember = dtSeans.Columns["SeansID"].ToString();
-
-            lblFiyat.Visible = false;
         }
 
+        private void filmCek()
+        {
+            DataTable dtFilm = new DataTable();
+            dtFilm = BLLADMIN.getDataTableFilm();
+
+
+            cmbFilm.DataSource = dtFilm;
+            cmbFilm.DisplayMember = dtFilm.Columns["FilmAd"].ToString();
+            cmbFilm.ValueMember = dtFilm.Columns["FilmID"].ToString();
+        }
+
+        private void biletTemizle()
+        {
+            //cmbIptalFilm.SelectedIndex = 0;
+            cmbIptalSalon.SelectedIndex = 0;
+            cmbIptalSeans.SelectedIndex = 0;
+            txtIptalAd.Clear();
+            txtIptalSoyad.Clear();
+            txtIptalKoltuk.Clear();
+            numericUpDownIptalBiletAdet.Value = 0;
+        }
+
+        private void Biletci_Load(object sender, EventArgs e)
+        {
+            filmCek();
+            salonCek();
+            seansCek();
+            iptalFilmCek();
+            iptalSalonCek();
+            iptalSeansCek();
+            lblFiyat.Visible = false;
+            doluKoltuklariCek();
+        }
+
+        //İptal işlemleri için veriler çekiliyor.
+        private void iptalSalonCek()
+        {
+            DataTable dtSalon = new DataTable();
+            dtSalon = BLLADMIN.getDataTableSalon();
+
+            cmbIptalSalon.DataSource = dtSalon;
+            cmbIptalSalon.DisplayMember = dtSalon.Columns["SalonAd"].ToString();
+            cmbIptalSalon.ValueMember = dtSalon.Columns["SalonID"].ToString();
+        }
+
+        private void iptalSeansCek()
+        {
+            DataTable dt = new DataTable();
+            dt = BLLADMIN.getDataTableSeans();
+
+            cmbIptalSeans.DataSource = dt;
+            cmbIptalSeans.DisplayMember = dt.Columns["SeansSaat"].ToString();
+            cmbIptalSeans.ValueMember = dt.Columns["SeansID"].ToString();
+        }
+
+        private void iptalFilmCek()
+        {
+            DataTable dtFilm = new DataTable();
+            dtFilm = BLLADMIN.getDataTableFilm();
+
+
+            cmbIptalFilm.DataSource = dtFilm;
+            cmbIptalFilm.DisplayMember = dtFilm.Columns["FilmAd"].ToString();
+            cmbIptalFilm.ValueMember = dtFilm.Columns["FilmID"].ToString();
+        }
+
+        private void dataGridViewBilet_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            cmbIptalFilm.SelectedValue = dataGridViewBilet.SelectedRows[0].Cells["Filmin Numarası"].Value.ToString();
+            cmbIptalSalon.SelectedValue = dataGridViewBilet.SelectedRows[0].Cells["Salonun Numarası"].Value.ToString();
+            cmbIptalSeans.SelectedValue = dataGridViewBilet.SelectedRows[0].Cells["Seans Numarası"].Value.ToString();
+            txtIptalAd.Text = dataGridViewBilet.SelectedRows[0].Cells["Müşteri Ad"].Value.ToString();
+            txtIptalSoyad.Text = dataGridViewBilet.SelectedRows[0].Cells["Müşteri Soyad"].Value.ToString();
+            txtIptalKoltuk.Text = dataGridViewBilet.SelectedRows[0].Cells["Koltuk Numaraları"].Value.ToString();
+            numericUpDownIptalBiletAdet.Value = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Bilet Adedi"].Value.ToString());
+        }
+
+        //Koltuk seçimi yaparken koltukların rengini değiştiren kodlar.
         private void btnKoltuk_Click(object sender, EventArgs e)
         {
             if (((Button)sender).BackColor == Color.Chartreuse) // yeşil
@@ -64,12 +179,11 @@ namespace Sinema
 
                 {
 
-                    koltuklar.Add(((Button)sender).Text);
-
+                    koltuklar.Add(((Button)sender).Text);                
                 }
 
                 koltukYazdir();
-
+                
             }
 
             else if (((Button)sender).BackColor == Color.Orange) // turuncu
@@ -128,22 +242,22 @@ namespace Sinema
 
                 }
 
-                txtiptalKoltuk.Text = koltuk;
+                txtIptalKoltuk.Text = koltuk;
 
             }
         }
 
-       private void koltukYazdir()
+        private void koltukYazdir()
 
         {
-
+            
             string koltuk = "";
 
             for (int i = 0; i < koltuklar.Count; i++)
 
             {
 
-                koltuk += koltuklar[i].ToString() + ",";//www.gorselprogramlama.com
+                koltuk += koltuklar[i].ToString() + ",";
 
             }
 
@@ -159,7 +273,7 @@ namespace Sinema
 
         }
 
-       private void biletAyir()
+        private void biletAyir()
 
         {
             decimal ucret;
@@ -172,7 +286,7 @@ namespace Sinema
 
             for (int i = 0; i < koltuklar.Count; i++)
 
-            {               
+            {
                 item.FilmID = Convert.ToInt32(cmbFilm.SelectedValue);
                 item.SalonID = Convert.ToInt32(cmbSalon.SelectedValue);
                 item.SeansID = Convert.ToInt32(cmbSeans.SelectedValue);
@@ -185,7 +299,7 @@ namespace Sinema
                 this.Controls.Find("btn" + koltuklar[i].ToString(), true)[0].BackColor = Color.Red;
             }
 
-            BLLBILETCI.Bilet_Insert(item);
+            //BLLBILETCI.Bilet_Insert(item);
 
             if (BLLBILETCI.Bilet_Insert(item) < 0)
             {
@@ -204,67 +318,125 @@ namespace Sinema
                 txtAd.Clear();
                 txtSoyad.Clear();
                 txtKoltuk.Clear();
+                koltuklar.Clear();
                 numericBiletAdet.Value = 0;
             }
 
         }
 
-        private void btnBiletKes_MouseClick(object sender, MouseEventArgs e)
-        {
-            biletAyir();         
-        }
-
         private void btnIptal_Click(object sender, EventArgs e)
         {
+
             EBILET item = new EBILET();
-            //string koltuk;
 
-                for (int i = 0; i < iptalKoltuk.Count; i++)
+            item.BiletID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["BiletID"].Value.ToString());
 
-                {
-                 //koltuk = iptalKoltuk[i].ToString() + ",";
-                    //BLLBILETCI.Bilet_Delete(Convert.ToInt32(iptalKoltuk[i]));
-                    this.Controls.Find("btn" + iptalKoltuk[i].ToString(), true)[0].BackColor = Color.Chartreuse;
-                }
-
-            FBAGLANTI.Baglan = new SqlConnection("Data Source=.;Initial Catalog=SINEMA;Integrated Security=True");
-            SqlCommand com = new SqlCommand("SELECT *FROM Bilet WHERE Koltuk ='"+txtiptalKoltuk.Text+"'", FBAGLANTI.Baglan);
-            FBAGLANTI.Baglan.Open();
-            SqlDataReader dr = com.ExecuteReader();
-            if (dr.HasRows)
+            if (BLLBILETCI.Bilet_Delete(item.BiletID))
             {
-                while (dr.Read())
-                {
-                    item.BiletID = Convert.ToInt32(dr["BiletID"]);
-                    item.FilmID = Convert.ToInt32(dr["FilmID"]);
-                    item.SalonID = Convert.ToInt32(dr["SalonID"]);
-                    item.SeansID = Convert.ToInt32(dr["SeansID"]);
-                    item.MusteriAd = dr["MusteriAd"].ToString();
-                    item.MusteriSoyad = dr["MusteriSoyad"].ToString();
-                    item.Koltuk = dr["Koltuk"].ToString();
-                    item.BiletAdet = Convert.ToInt32(dr["BiletAdet"]);
-                }
+                doluKoltuklariCek();
+                biletCek();
+                MessageBox.Show("Bilet silme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                biletTemizle();
+                Application.Restart();                          
+            }
+            else
+            {
+                biletCek();
+                MessageBox.Show("Bilet silme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                biletTemizle();
+                
             }
 
-            BLLBILETCI.Bilet_Delete(item.BiletID);
-            dr.Close();
-            com.Dispose();
-            FBAGLANTI.Baglan.Close();
-            FBAGLANTI.Baglan.Dispose();
+            for (int i = 0; i < item.BiletAdet; i++)
 
-
-
-            iptalKoltuk.Clear();//www.gorselprogramlama.com
-
-                txtiptalKoltuk.Text = "";
-
-                txtAd.Text = "";
-
-                txtSoyad.Text = "";
+            {
+              
+                this.Controls.Find("btn" + iptalKoltuk[i].ToString(), true)[0].BackColor = Color.Chartreuse;
+            }
 
         }
 
+        private void doluKoltuklariCek()
+        {
+            List<EBILET> itemlist = BLLBILETCI.Bilet_SelectList();
 
+            string koltuk = "";
+            foreach (EBILET item in itemlist)
+            {
+                koltuk += item.Koltuk;
+                koltuk += ",";
+            }        
+           string[] values = koltuk.Split(',');
+
+            for (int i = 0; i < values.Length - 1; i++)
+            {
+                this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
+               
+            }
+        }
+
+        private void btnBiletKes_Click(object sender, EventArgs e)
+        {
+            biletAyir();
+            doluKoltuklariCek();
+            
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            EBILET item = new EBILET();
+
+            item.BiletID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["BiletID"].Value.ToString());
+            item.FilmID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Filmin Numarası"].Value.ToString());
+            item.SalonID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Salonun Numarası"].Value.ToString());
+            item.SeansID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Seans Numarası"].Value.ToString());
+            item.MusteriAd = dataGridViewBilet.SelectedRows[0].Cells["Müşteri Ad"].Value.ToString();
+            item.MusteriSoyad = dataGridViewBilet.SelectedRows[0].Cells["Müşteri Soyad"].Value.ToString();
+            item.Koltuk = dataGridViewBilet.SelectedRows[0].Cells["Koltuk Numaraları"].Value.ToString();
+            item.BiletAdet = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Bilet Adedi"].Value.ToString());
+            item.Ucret = Convert.ToDecimal(dataGridViewBilet.SelectedRows[0].Cells["Ücret"].Value.ToString());
+
+            decimal ucret;
+            string koltuk = "";
+
+            if (rbOgrenci.Checked) ucret = 6;
+
+            else ucret = 10;
+
+            item.FilmID = Convert.ToInt32(cmbIptalFilm.SelectedValue);
+            item.SalonID = Convert.ToInt32(cmbIptalSalon.SelectedValue);
+            item.SeansID = Convert.ToInt32(cmbIptalSeans.SelectedValue);
+            item.MusteriAd = txtIptalAd.Text;
+            item.MusteriSoyad = txtIptalSoyad.Text;
+            item.Koltuk = txtIptalKoltuk.Text;
+            item.BiletAdet = Convert.ToInt32(numericUpDownIptalBiletAdet.Value);
+            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);
+
+            if (BLLBILETCI.Bilet_Update(item))
+            {
+                
+                MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                string[] values = item.Koltuk.Split(',');
+
+                for (int i = 0; i < values.Length - 1; i++)
+                {
+                    this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
+
+                }
+                Application.Restart();
+
+            }
+            else
+            {
+                MessageBox.Show("Bilet güncelleme işlemi gerçekleştirilemedi. Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            
+
+
+        }
     }
 }
 
