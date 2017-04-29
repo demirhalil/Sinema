@@ -88,7 +88,7 @@ namespace BusinessLogicLayer
         {
             if (_FilmID > 0)
             {
-                FADMIN.Film_Delete(_FilmID);
+               return FADMIN.Film_Delete(_FilmID);
             }
 
             return false;
