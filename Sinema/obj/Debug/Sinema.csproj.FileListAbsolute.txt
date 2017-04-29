@@ -14,3 +14,4 @@ D:\C#_Projeleri\Sinema\Sinema\bin\Debug\FacadeLayer.pdb
 D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.exe
 D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.pdb
 D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Admin.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Login.resources
