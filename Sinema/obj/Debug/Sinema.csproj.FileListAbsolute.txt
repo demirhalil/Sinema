@@ -1,7 +1,3 @@
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csprojResolveAssemblyReference.cache
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Biletci.resources
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Properties.Resources.resources
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csproj.GenerateResource.Cache
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.exe.config
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.exe
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\Sinema.pdb
@@ -11,7 +7,11 @@ D:\C#_Projeleri\Sinema\Sinema\bin\Debug\FacadeLayer.dll
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\BusinessLogicLayer.pdb
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\EntityLayer.pdb
 D:\C#_Projeleri\Sinema\Sinema\bin\Debug\FacadeLayer.pdb
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Admin.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Biletci.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Login.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Properties.Resources.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.csproj.GenerateResource.Cache
 D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.exe
 D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.pdb
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Admin.resources
-D:\C#_Projeleri\Sinema\Sinema\obj\Debug\Sinema.Login.resources

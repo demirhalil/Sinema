@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using BusinessLogicLayer;
 using System.Collections;
 using EntityLayer;
-using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using FacadeLayer;
@@ -43,7 +42,7 @@ namespace Sinema
             }
         }
 
-        //Veritabanından Bilet,Film,Salon,Seans verileri çekildi.Bilet Kes tab için.
+        //Veritabanından Bilet,Film,Salon,Seans,Dolu koltukların verileri çekildi.
         private void biletCek()
         {
             DataTable dt = new DataTable();
@@ -102,13 +101,31 @@ namespace Sinema
 
         private void biletTemizle()
         {
-            //cmbIptalFilm.SelectedIndex = 0;
+            cmbIptalFilm.SelectedIndex = 0;
             cmbIptalSalon.SelectedIndex = 0;
             cmbIptalSeans.SelectedIndex = 0;
             txtIptalAd.Clear();
             txtIptalSoyad.Clear();
             txtIptalKoltuk.Clear();
             numericUpDownIptalBiletAdet.Value = 0;
+        }
+
+        private void doluKoltuklariCek()
+        {
+            List<EBILET> itemlist = BLLBILETCI.Bilet_SelectList();
+
+            string koltuk = "";
+            foreach (EBILET item in itemlist)
+            {
+                koltuk += item.Koltuk;
+                koltuk += ",";
+            }
+            string[] values = koltuk.Split(',');
+
+            for (int i = 0; i < values.Length - 1; i++)
+            {
+                this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
+            }
         }
 
         private void Biletci_Load(object sender, EventArgs e)
@@ -121,6 +138,8 @@ namespace Sinema
             iptalSeansCek();
             lblFiyat.Visible = false;
             doluKoltuklariCek();
+            lblUyari.Visible = false;
+            lblUyariGuncelleme.Visible = false;
         }
 
         //İptal işlemleri için veriler çekiliyor.
@@ -299,11 +318,12 @@ namespace Sinema
                 this.Controls.Find("btn" + koltuklar[i].ToString(), true)[0].BackColor = Color.Red;
             }
 
-            //BLLBILETCI.Bilet_Insert(item);
 
             if (BLLBILETCI.Bilet_Insert(item) < 0)
             {
-                MessageBox.Show("Bilet alma işlemi gerçekleştirilemedi. Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bilet alma işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyari.Visible = true;
+                lblUyari.ForeColor = Color.Red;
                 for (int i = 0; i < koltuklar.Count; i++)
 
                 {
@@ -313,7 +333,7 @@ namespace Sinema
             }
             else
             {
-
+                lblFiyat.Visible = true;
                 MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtAd.Clear();
                 txtSoyad.Clear();
@@ -326,52 +346,23 @@ namespace Sinema
 
         private void btnIptal_Click(object sender, EventArgs e)
         {
-
             EBILET item = new EBILET();
 
             item.BiletID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["BiletID"].Value.ToString());
 
             if (BLLBILETCI.Bilet_Delete(item.BiletID))
             {
-                doluKoltuklariCek();
+                iptalEt();
                 biletCek();
                 MessageBox.Show("Bilet silme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                biletTemizle();
-                Application.Restart();                          
+                biletTemizle();                         
             }
             else
             {
                 biletCek();
                 MessageBox.Show("Bilet silme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 biletTemizle();
-                
-            }
 
-            for (int i = 0; i < item.BiletAdet; i++)
-
-            {
-              
-                this.Controls.Find("btn" + iptalKoltuk[i].ToString(), true)[0].BackColor = Color.Chartreuse;
-            }
-
-        }
-
-        private void doluKoltuklariCek()
-        {
-            List<EBILET> itemlist = BLLBILETCI.Bilet_SelectList();
-
-            string koltuk = "";
-            foreach (EBILET item in itemlist)
-            {
-                koltuk += item.Koltuk;
-                koltuk += ",";
-            }        
-           string[] values = koltuk.Split(',');
-
-            for (int i = 0; i < values.Length - 1; i++)
-            {
-                this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
-               
             }
         }
 
@@ -397,7 +388,6 @@ namespace Sinema
             item.Ucret = Convert.ToDecimal(dataGridViewBilet.SelectedRows[0].Cells["Ücret"].Value.ToString());
 
             decimal ucret;
-            string koltuk = "";
 
             if (rbOgrenci.Checked) ucret = 6;
 
@@ -414,29 +404,32 @@ namespace Sinema
 
             if (BLLBILETCI.Bilet_Update(item))
             {
-                
-                MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
-                string[] values = item.Koltuk.Split(',');
-
-                for (int i = 0; i < values.Length - 1; i++)
-                {
-                    this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
-
-                }
+                doluKoltuklariCek();
+                MessageBox.Show("Seçilen biletler başarılı bir şekilde güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                biletTemizle();
                 Application.Restart();
 
             }
             else
             {
-                MessageBox.Show("Bilet güncelleme işlemi gerçekleştirilemedi. Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bilet güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariGuncelleme.Visible = true;
+                lblUyariGuncelleme.ForeColor = Color.Red;
 
             }
-
-            
-
-
         }
+
+        //İptal edilen koltukların rengini değiştirmek için.
+        private void iptalEt()
+        {
+            string[] values = txtIptalKoltuk.Text.Split(',');
+            for (int i = 0; i < values.Length; i++)
+            {
+                this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Chartreuse;
+            }
+        }
+
+        
     }
 }
 

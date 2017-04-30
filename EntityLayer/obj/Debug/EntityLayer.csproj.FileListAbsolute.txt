@@ -1,5 +1,4 @@
 D:\C#_Projeleri\Sinema\EntityLayer\bin\Debug\EntityLayer.dll
 D:\C#_Projeleri\Sinema\EntityLayer\bin\Debug\EntityLayer.pdb
-D:\C#_Projeleri\Sinema\EntityLayer\obj\Debug\EntityLayer.csprojResolveAssemblyReference.cache
 D:\C#_Projeleri\Sinema\EntityLayer\obj\Debug\EntityLayer.dll
 D:\C#_Projeleri\Sinema\EntityLayer\obj\Debug\EntityLayer.pdb

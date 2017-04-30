@@ -78,7 +78,7 @@ namespace FacadeLayer
             }
             catch
             {
-                sonuc = true;
+                sonuc = false;
             }
 
             return sonuc;

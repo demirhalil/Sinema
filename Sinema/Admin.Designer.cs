@@ -30,8 +30,49 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.tabPageCalisan = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewCalisan = new System.Windows.Forms.DataGridView();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.rdbAdminDegil = new System.Windows.Forms.RadioButton();
+            this.rdbAdmin = new System.Windows.Forms.RadioButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateTimeIseGirisTarih = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDogumTarih = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTC = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtKullaniciParola = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtKullaniciAd = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnCalisanSil = new System.Windows.Forms.Button();
+            this.btnCalisanGuncelle = new System.Windows.Forms.Button();
+            this.btnCalisanEkle = new System.Windows.Forms.Button();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabPageSeans = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewSeans = new System.Windows.Forms.DataGridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnSeansSil = new System.Windows.Forms.Button();
+            this.btnSeansGuncelle = new System.Windows.Forms.Button();
+            this.btnSeansEkle = new System.Windows.Forms.Button();
+            this.txtSeansSaati = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabPageSalon = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewSalon = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnSalonSil = new System.Windows.Forms.Button();
+            this.btnSalonGuncelle = new System.Windows.Forms.Button();
+            this.btnSalonEkle = new System.Windows.Forms.Button();
+            this.txtSalonKapasite = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtSalonAd = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabPageFilm = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewFilm = new System.Windows.Forms.DataGridView();
@@ -53,64 +94,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewSalon = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnSalonSil = new System.Windows.Forms.Button();
-            this.btnSalonGuncelle = new System.Windows.Forms.Button();
-            this.btnSalonEkle = new System.Windows.Forms.Button();
-            this.txtSalonKapasite = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtSalonAd = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewSeans = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnSeansSil = new System.Windows.Forms.Button();
-            this.btnSeansGuncelle = new System.Windows.Forms.Button();
-            this.btnSeansEkle = new System.Windows.Forms.Button();
-            this.txtSeansSaati = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewCalisan = new System.Windows.Forms.DataGridView();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btnCalisanSil = new System.Windows.Forms.Button();
-            this.btnCalisanGuncelle = new System.Windows.Forms.Button();
-            this.btnCalisanEkle = new System.Windows.Forms.Button();
-            this.txtAd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtKullaniciParola = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtKullaniciAd = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtTC = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateTimeDogumTarih = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeIseGirisTarih = new System.Windows.Forms.DateTimePicker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.rdbAdmin = new System.Windows.Forms.RadioButton();
-            this.rdbAdminDegil = new System.Windows.Forms.RadioButton();
+            this.lblUyariFilm = new System.Windows.Forms.Label();
+            this.lblUyariSalon = new System.Windows.Forms.Label();
+            this.lblUyariSeans = new System.Windows.Forms.Label();
+            this.lblUyariCalisan = new System.Windows.Forms.Label();
             this.tabPageCalisan.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).BeginInit();
+            this.groupBox8.SuspendLayout();
             this.tabPageSeans.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeans)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.tabPageSalon.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalon)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.tabPageFilm.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilm)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalon)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeans)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).BeginInit();
-            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPageCalisan
@@ -125,6 +129,247 @@
             this.tabPageCalisan.Text = "Çalışan İşlemleri";
             this.tabPageCalisan.UseVisualStyleBackColor = true;
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.dataGridViewCalisan);
+            this.groupBox7.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(25, 313);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(920, 325);
+            this.groupBox7.TabIndex = 13;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Çalışan Bilgileri";
+            // 
+            // dataGridViewCalisan
+            // 
+            this.dataGridViewCalisan.AllowUserToAddRows = false;
+            this.dataGridViewCalisan.AllowUserToDeleteRows = false;
+            this.dataGridViewCalisan.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewCalisan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCalisan.Location = new System.Drawing.Point(10, 26);
+            this.dataGridViewCalisan.MultiSelect = false;
+            this.dataGridViewCalisan.Name = "dataGridViewCalisan";
+            this.dataGridViewCalisan.ReadOnly = true;
+            this.dataGridViewCalisan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewCalisan.Size = new System.Drawing.Size(904, 293);
+            this.dataGridViewCalisan.TabIndex = 14;
+            this.dataGridViewCalisan.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCalisan_CellMouseClick);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.lblUyariCalisan);
+            this.groupBox8.Controls.Add(this.rdbAdminDegil);
+            this.groupBox8.Controls.Add(this.rdbAdmin);
+            this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.dateTimeIseGirisTarih);
+            this.groupBox8.Controls.Add(this.dateTimeDogumTarih);
+            this.groupBox8.Controls.Add(this.label16);
+            this.groupBox8.Controls.Add(this.label15);
+            this.groupBox8.Controls.Add(this.txtTC);
+            this.groupBox8.Controls.Add(this.label14);
+            this.groupBox8.Controls.Add(this.txtKullaniciParola);
+            this.groupBox8.Controls.Add(this.label11);
+            this.groupBox8.Controls.Add(this.txtKullaniciAd);
+            this.groupBox8.Controls.Add(this.label13);
+            this.groupBox8.Controls.Add(this.txtSoyad);
+            this.groupBox8.Controls.Add(this.label9);
+            this.groupBox8.Controls.Add(this.btnCalisanSil);
+            this.groupBox8.Controls.Add(this.btnCalisanGuncelle);
+            this.groupBox8.Controls.Add(this.btnCalisanEkle);
+            this.groupBox8.Controls.Add(this.txtAd);
+            this.groupBox8.Controls.Add(this.label3);
+            this.groupBox8.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Location = new System.Drawing.Point(25, 15);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(920, 277);
+            this.groupBox8.TabIndex = 0;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Çalışan Ekleme,Güncelleme,Silme";
+            // 
+            // rdbAdminDegil
+            // 
+            this.rdbAdminDegil.AutoSize = true;
+            this.rdbAdminDegil.Location = new System.Drawing.Point(727, 162);
+            this.rdbAdminDegil.Name = "rdbAdminDegil";
+            this.rdbAdminDegil.Size = new System.Drawing.Size(49, 23);
+            this.rdbAdminDegil.TabIndex = 9;
+            this.rdbAdminDegil.TabStop = true;
+            this.rdbAdminDegil.Text = "Yok";
+            this.rdbAdminDegil.UseVisualStyleBackColor = true;
+            // 
+            // rdbAdmin
+            // 
+            this.rdbAdmin.AutoSize = true;
+            this.rdbAdmin.Location = new System.Drawing.Point(582, 162);
+            this.rdbAdmin.Name = "rdbAdmin";
+            this.rdbAdmin.Size = new System.Drawing.Size(48, 23);
+            this.rdbAdmin.TabIndex = 8;
+            this.rdbAdmin.TabStop = true;
+            this.rdbAdmin.Text = "Var";
+            this.rdbAdmin.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(483, 166);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(93, 19);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "Admin Yetki :";
+            // 
+            // dateTimeIseGirisTarih
+            // 
+            this.dateTimeIseGirisTarih.Location = new System.Drawing.Point(582, 116);
+            this.dateTimeIseGirisTarih.Name = "dateTimeIseGirisTarih";
+            this.dateTimeIseGirisTarih.Size = new System.Drawing.Size(256, 27);
+            this.dateTimeIseGirisTarih.TabIndex = 7;
+            // 
+            // dateTimeDogumTarih
+            // 
+            this.dateTimeDogumTarih.Location = new System.Drawing.Point(582, 77);
+            this.dateTimeDogumTarih.Name = "dateTimeDogumTarih";
+            this.dateTimeDogumTarih.Size = new System.Drawing.Size(256, 27);
+            this.dateTimeDogumTarih.TabIndex = 6;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(473, 79);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(103, 19);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "Doğum Tarihi :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(473, 122);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(108, 19);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "İşe Giriş Tarihi :";
+            // 
+            // txtTC
+            // 
+            this.txtTC.Location = new System.Drawing.Point(582, 37);
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(256, 27);
+            this.txtTC.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(433, 40);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(143, 19);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "TC Kimlik Numarası :";
+            // 
+            // txtKullaniciParola
+            // 
+            this.txtKullaniciParola.Location = new System.Drawing.Point(129, 166);
+            this.txtKullaniciParola.Name = "txtKullaniciParola";
+            this.txtKullaniciParola.Size = new System.Drawing.Size(214, 27);
+            this.txtKullaniciParola.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(6, 169);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 19);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Kullanıcı Parola :";
+            // 
+            // txtKullaniciAd
+            // 
+            this.txtKullaniciAd.Location = new System.Drawing.Point(129, 122);
+            this.txtKullaniciAd.Name = "txtKullaniciAd";
+            this.txtKullaniciAd.Size = new System.Drawing.Size(214, 27);
+            this.txtKullaniciAd.TabIndex = 3;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(30, 125);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 19);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Kullanıcı Ad :";
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Location = new System.Drawing.Point(129, 79);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(214, 27);
+            this.txtSoyad.TabIndex = 2;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(65, 82);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 19);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Soyad :";
+            // 
+            // btnCalisanSil
+            // 
+            this.btnCalisanSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanSil.Location = new System.Drawing.Point(751, 212);
+            this.btnCalisanSil.Name = "btnCalisanSil";
+            this.btnCalisanSil.Size = new System.Drawing.Size(105, 42);
+            this.btnCalisanSil.TabIndex = 12;
+            this.btnCalisanSil.Text = "Sil";
+            this.btnCalisanSil.UseVisualStyleBackColor = true;
+            this.btnCalisanSil.Click += new System.EventHandler(this.btnCalisanSil_Click);
+            // 
+            // btnCalisanGuncelle
+            // 
+            this.btnCalisanGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanGuncelle.Location = new System.Drawing.Point(612, 212);
+            this.btnCalisanGuncelle.Name = "btnCalisanGuncelle";
+            this.btnCalisanGuncelle.Size = new System.Drawing.Size(105, 42);
+            this.btnCalisanGuncelle.TabIndex = 11;
+            this.btnCalisanGuncelle.Text = "Güncelle";
+            this.btnCalisanGuncelle.UseVisualStyleBackColor = true;
+            this.btnCalisanGuncelle.Click += new System.EventHandler(this.btnCalisanGuncelle_Click);
+            // 
+            // btnCalisanEkle
+            // 
+            this.btnCalisanEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanEkle.Location = new System.Drawing.Point(477, 212);
+            this.btnCalisanEkle.Name = "btnCalisanEkle";
+            this.btnCalisanEkle.Size = new System.Drawing.Size(105, 42);
+            this.btnCalisanEkle.TabIndex = 10;
+            this.btnCalisanEkle.Text = "Çalışan Ekle";
+            this.btnCalisanEkle.UseVisualStyleBackColor = true;
+            this.btnCalisanEkle.Click += new System.EventHandler(this.btnCalisanEkle_Click);
+            // 
+            // txtAd
+            // 
+            this.txtAd.Location = new System.Drawing.Point(129, 37);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(214, 27);
+            this.txtAd.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(86, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 19);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Ad :";
+            // 
             // tabPageSeans
             // 
             this.tabPageSeans.Controls.Add(this.groupBox5);
@@ -137,6 +382,98 @@
             this.tabPageSeans.Text = "Seans İşlemleri";
             this.tabPageSeans.UseVisualStyleBackColor = true;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dataGridViewSeans);
+            this.groupBox5.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(25, 313);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(920, 325);
+            this.groupBox5.TabIndex = 5;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Seans Bilgileri";
+            // 
+            // dataGridViewSeans
+            // 
+            this.dataGridViewSeans.AllowUserToAddRows = false;
+            this.dataGridViewSeans.AllowUserToDeleteRows = false;
+            this.dataGridViewSeans.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewSeans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSeans.Location = new System.Drawing.Point(10, 26);
+            this.dataGridViewSeans.MultiSelect = false;
+            this.dataGridViewSeans.Name = "dataGridViewSeans";
+            this.dataGridViewSeans.ReadOnly = true;
+            this.dataGridViewSeans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewSeans.Size = new System.Drawing.Size(904, 293);
+            this.dataGridViewSeans.TabIndex = 6;
+            this.dataGridViewSeans.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSeans_CellMouseClick);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.lblUyariSeans);
+            this.groupBox6.Controls.Add(this.btnSeansSil);
+            this.groupBox6.Controls.Add(this.btnSeansGuncelle);
+            this.groupBox6.Controls.Add(this.btnSeansEkle);
+            this.groupBox6.Controls.Add(this.txtSeansSaati);
+            this.groupBox6.Controls.Add(this.label8);
+            this.groupBox6.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(25, 15);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(920, 245);
+            this.groupBox6.TabIndex = 0;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Seans Ekleme,Güncelleme,Silme";
+            // 
+            // btnSeansSil
+            // 
+            this.btnSeansSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSeansSil.Location = new System.Drawing.Point(382, 123);
+            this.btnSeansSil.Name = "btnSeansSil";
+            this.btnSeansSil.Size = new System.Drawing.Size(105, 42);
+            this.btnSeansSil.TabIndex = 4;
+            this.btnSeansSil.Text = "Sil";
+            this.btnSeansSil.UseVisualStyleBackColor = true;
+            this.btnSeansSil.Click += new System.EventHandler(this.btnSeansSil_Click);
+            // 
+            // btnSeansGuncelle
+            // 
+            this.btnSeansGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSeansGuncelle.Location = new System.Drawing.Point(249, 123);
+            this.btnSeansGuncelle.Name = "btnSeansGuncelle";
+            this.btnSeansGuncelle.Size = new System.Drawing.Size(105, 42);
+            this.btnSeansGuncelle.TabIndex = 3;
+            this.btnSeansGuncelle.Text = "Güncelle";
+            this.btnSeansGuncelle.UseVisualStyleBackColor = true;
+            this.btnSeansGuncelle.Click += new System.EventHandler(this.btnSeansGuncelle_Click);
+            // 
+            // btnSeansEkle
+            // 
+            this.btnSeansEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSeansEkle.Location = new System.Drawing.Point(120, 123);
+            this.btnSeansEkle.Name = "btnSeansEkle";
+            this.btnSeansEkle.Size = new System.Drawing.Size(105, 42);
+            this.btnSeansEkle.TabIndex = 2;
+            this.btnSeansEkle.Text = "Seans Ekle";
+            this.btnSeansEkle.UseVisualStyleBackColor = true;
+            this.btnSeansEkle.Click += new System.EventHandler(this.btnSeansEkle_Click);
+            // 
+            // txtSeansSaati
+            // 
+            this.txtSeansSaati.Location = new System.Drawing.Point(120, 58);
+            this.txtSeansSaati.Name = "txtSeansSaati";
+            this.txtSeansSaati.Size = new System.Drawing.Size(367, 27);
+            this.txtSeansSaati.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(23, 61);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 19);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Seans Saati :";
+            // 
             // tabPageSalon
             // 
             this.tabPageSalon.Controls.Add(this.groupBox3);
@@ -148,6 +485,117 @@
             this.tabPageSalon.TabIndex = 1;
             this.tabPageSalon.Text = "Salon İşlemleri";
             this.tabPageSalon.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dataGridViewSalon);
+            this.groupBox3.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(6, 316);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(920, 325);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Salon Bilgileri";
+            // 
+            // dataGridViewSalon
+            // 
+            this.dataGridViewSalon.AllowUserToAddRows = false;
+            this.dataGridViewSalon.AllowUserToDeleteRows = false;
+            this.dataGridViewSalon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewSalon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSalon.Location = new System.Drawing.Point(10, 26);
+            this.dataGridViewSalon.MultiSelect = false;
+            this.dataGridViewSalon.Name = "dataGridViewSalon";
+            this.dataGridViewSalon.ReadOnly = true;
+            this.dataGridViewSalon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewSalon.Size = new System.Drawing.Size(904, 293);
+            this.dataGridViewSalon.TabIndex = 7;
+            this.dataGridViewSalon.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSalon_CellMouseClick);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.lblUyariSalon);
+            this.groupBox4.Controls.Add(this.btnSalonSil);
+            this.groupBox4.Controls.Add(this.btnSalonGuncelle);
+            this.groupBox4.Controls.Add(this.btnSalonEkle);
+            this.groupBox4.Controls.Add(this.txtSalonKapasite);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.txtSalonAd);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(6, 18);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(920, 271);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Salon Ekleme,Güncelleme,Silme";
+            // 
+            // btnSalonSil
+            // 
+            this.btnSalonSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSalonSil.Location = new System.Drawing.Point(362, 152);
+            this.btnSalonSil.Name = "btnSalonSil";
+            this.btnSalonSil.Size = new System.Drawing.Size(105, 42);
+            this.btnSalonSil.TabIndex = 5;
+            this.btnSalonSil.Text = "Sil";
+            this.btnSalonSil.UseVisualStyleBackColor = true;
+            this.btnSalonSil.Click += new System.EventHandler(this.btnSalonSil_Click);
+            // 
+            // btnSalonGuncelle
+            // 
+            this.btnSalonGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSalonGuncelle.Location = new System.Drawing.Point(233, 152);
+            this.btnSalonGuncelle.Name = "btnSalonGuncelle";
+            this.btnSalonGuncelle.Size = new System.Drawing.Size(105, 42);
+            this.btnSalonGuncelle.TabIndex = 4;
+            this.btnSalonGuncelle.Text = "Güncelle";
+            this.btnSalonGuncelle.UseVisualStyleBackColor = true;
+            this.btnSalonGuncelle.Click += new System.EventHandler(this.btnSalonGuncelle_Click);
+            // 
+            // btnSalonEkle
+            // 
+            this.btnSalonEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSalonEkle.Location = new System.Drawing.Point(100, 152);
+            this.btnSalonEkle.Name = "btnSalonEkle";
+            this.btnSalonEkle.Size = new System.Drawing.Size(105, 42);
+            this.btnSalonEkle.TabIndex = 3;
+            this.btnSalonEkle.Text = "Salon Ekle";
+            this.btnSalonEkle.UseVisualStyleBackColor = true;
+            this.btnSalonEkle.Click += new System.EventHandler(this.btnSalonEkle_Click);
+            // 
+            // txtSalonKapasite
+            // 
+            this.txtSalonKapasite.Location = new System.Drawing.Point(100, 92);
+            this.txtSalonKapasite.Name = "txtSalonKapasite";
+            this.txtSalonKapasite.Size = new System.Drawing.Size(367, 27);
+            this.txtSalonKapasite.TabIndex = 2;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(15, 95);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 19);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Kapasite :";
+            // 
+            // txtSalonAd
+            // 
+            this.txtSalonAd.Location = new System.Drawing.Point(100, 45);
+            this.txtSalonAd.Name = "txtSalonAd";
+            this.txtSalonAd.Size = new System.Drawing.Size(367, 27);
+            this.txtSalonAd.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(25, 48);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(69, 19);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Salon Ad:";
             // 
             // tabPageFilm
             // 
@@ -190,6 +638,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblUyariFilm);
             this.groupBox1.Controls.Add(this.btnSil);
             this.groupBox1.Controls.Add(this.btnGuncelle);
             this.groupBox1.Controls.Add(this.btnFilmEkle);
@@ -379,446 +828,45 @@
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.dataGridViewSalon);
-            this.groupBox3.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 316);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(920, 325);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Salon Bilgileri";
-            // 
-            // dataGridViewSalon
-            // 
-            this.dataGridViewSalon.AllowUserToAddRows = false;
-            this.dataGridViewSalon.AllowUserToDeleteRows = false;
-            this.dataGridViewSalon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewSalon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSalon.Location = new System.Drawing.Point(10, 26);
-            this.dataGridViewSalon.MultiSelect = false;
-            this.dataGridViewSalon.Name = "dataGridViewSalon";
-            this.dataGridViewSalon.ReadOnly = true;
-            this.dataGridViewSalon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewSalon.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewSalon.TabIndex = 7;
-            this.dataGridViewSalon.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSalon_CellMouseClick);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.btnSalonSil);
-            this.groupBox4.Controls.Add(this.btnSalonGuncelle);
-            this.groupBox4.Controls.Add(this.btnSalonEkle);
-            this.groupBox4.Controls.Add(this.txtSalonKapasite);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.txtSalonAd);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(6, 18);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(920, 271);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Salon Ekleme,Güncelleme,Silme";
-            // 
-            // btnSalonSil
-            // 
-            this.btnSalonSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSalonSil.Location = new System.Drawing.Point(362, 152);
-            this.btnSalonSil.Name = "btnSalonSil";
-            this.btnSalonSil.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonSil.TabIndex = 5;
-            this.btnSalonSil.Text = "Sil";
-            this.btnSalonSil.UseVisualStyleBackColor = true;
-            this.btnSalonSil.Click += new System.EventHandler(this.btnSalonSil_Click);
-            // 
-            // btnSalonGuncelle
-            // 
-            this.btnSalonGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSalonGuncelle.Location = new System.Drawing.Point(233, 152);
-            this.btnSalonGuncelle.Name = "btnSalonGuncelle";
-            this.btnSalonGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonGuncelle.TabIndex = 4;
-            this.btnSalonGuncelle.Text = "Güncelle";
-            this.btnSalonGuncelle.UseVisualStyleBackColor = true;
-            this.btnSalonGuncelle.Click += new System.EventHandler(this.btnSalonGuncelle_Click);
-            // 
-            // btnSalonEkle
-            // 
-            this.btnSalonEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSalonEkle.Location = new System.Drawing.Point(100, 152);
-            this.btnSalonEkle.Name = "btnSalonEkle";
-            this.btnSalonEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnSalonEkle.TabIndex = 3;
-            this.btnSalonEkle.Text = "Salon Ekle";
-            this.btnSalonEkle.UseVisualStyleBackColor = true;
-            this.btnSalonEkle.Click += new System.EventHandler(this.btnSalonEkle_Click);
-            // 
-            // txtSalonKapasite
-            // 
-            this.txtSalonKapasite.Location = new System.Drawing.Point(100, 92);
-            this.txtSalonKapasite.Name = "txtSalonKapasite";
-            this.txtSalonKapasite.Size = new System.Drawing.Size(367, 27);
-            this.txtSalonKapasite.TabIndex = 2;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(15, 95);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 19);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Kapasite :";
-            // 
-            // txtSalonAd
-            // 
-            this.txtSalonAd.Location = new System.Drawing.Point(100, 45);
-            this.txtSalonAd.Name = "txtSalonAd";
-            this.txtSalonAd.Size = new System.Drawing.Size(367, 27);
-            this.txtSalonAd.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(25, 48);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 19);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Salon Ad:";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.dataGridViewSeans);
-            this.groupBox5.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(25, 313);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(920, 325);
-            this.groupBox5.TabIndex = 5;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Seans Bilgileri";
-            // 
-            // dataGridViewSeans
-            // 
-            this.dataGridViewSeans.AllowUserToAddRows = false;
-            this.dataGridViewSeans.AllowUserToDeleteRows = false;
-            this.dataGridViewSeans.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewSeans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSeans.Location = new System.Drawing.Point(10, 26);
-            this.dataGridViewSeans.MultiSelect = false;
-            this.dataGridViewSeans.Name = "dataGridViewSeans";
-            this.dataGridViewSeans.ReadOnly = true;
-            this.dataGridViewSeans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewSeans.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewSeans.TabIndex = 6;
-            this.dataGridViewSeans.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewSeans_CellMouseClick);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.btnSeansSil);
-            this.groupBox6.Controls.Add(this.btnSeansGuncelle);
-            this.groupBox6.Controls.Add(this.btnSeansEkle);
-            this.groupBox6.Controls.Add(this.txtSeansSaati);
-            this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(25, 15);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(920, 245);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Seans Ekleme,Güncelleme,Silme";
-            // 
-            // btnSeansSil
-            // 
-            this.btnSeansSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSeansSil.Location = new System.Drawing.Point(382, 123);
-            this.btnSeansSil.Name = "btnSeansSil";
-            this.btnSeansSil.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansSil.TabIndex = 4;
-            this.btnSeansSil.Text = "Sil";
-            this.btnSeansSil.UseVisualStyleBackColor = true;
-            this.btnSeansSil.Click += new System.EventHandler(this.btnSeansSil_Click);
-            // 
-            // btnSeansGuncelle
-            // 
-            this.btnSeansGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSeansGuncelle.Location = new System.Drawing.Point(249, 123);
-            this.btnSeansGuncelle.Name = "btnSeansGuncelle";
-            this.btnSeansGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansGuncelle.TabIndex = 3;
-            this.btnSeansGuncelle.Text = "Güncelle";
-            this.btnSeansGuncelle.UseVisualStyleBackColor = true;
-            this.btnSeansGuncelle.Click += new System.EventHandler(this.btnSeansGuncelle_Click);
-            // 
-            // btnSeansEkle
-            // 
-            this.btnSeansEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSeansEkle.Location = new System.Drawing.Point(120, 123);
-            this.btnSeansEkle.Name = "btnSeansEkle";
-            this.btnSeansEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnSeansEkle.TabIndex = 2;
-            this.btnSeansEkle.Text = "Seans Ekle";
-            this.btnSeansEkle.UseVisualStyleBackColor = true;
-            this.btnSeansEkle.Click += new System.EventHandler(this.btnSeansEkle_Click);
-            // 
-            // txtSeansSaati
-            // 
-            this.txtSeansSaati.Location = new System.Drawing.Point(120, 58);
-            this.txtSeansSaati.Name = "txtSeansSaati";
-            this.txtSeansSaati.Size = new System.Drawing.Size(367, 27);
-            this.txtSeansSaati.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(23, 61);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Seans Saati :";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.dataGridViewCalisan);
-            this.groupBox7.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(25, 313);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(920, 325);
-            this.groupBox7.TabIndex = 13;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Çalışan Bilgileri";
-            // 
-            // dataGridViewCalisan
-            // 
-            this.dataGridViewCalisan.AllowUserToAddRows = false;
-            this.dataGridViewCalisan.AllowUserToDeleteRows = false;
-            this.dataGridViewCalisan.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewCalisan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCalisan.Location = new System.Drawing.Point(10, 26);
-            this.dataGridViewCalisan.MultiSelect = false;
-            this.dataGridViewCalisan.Name = "dataGridViewCalisan";
-            this.dataGridViewCalisan.ReadOnly = true;
-            this.dataGridViewCalisan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCalisan.Size = new System.Drawing.Size(904, 293);
-            this.dataGridViewCalisan.TabIndex = 14;
-            this.dataGridViewCalisan.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCalisan_CellMouseClick);
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.rdbAdminDegil);
-            this.groupBox8.Controls.Add(this.rdbAdmin);
-            this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Controls.Add(this.dateTimeIseGirisTarih);
-            this.groupBox8.Controls.Add(this.dateTimeDogumTarih);
-            this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.label15);
-            this.groupBox8.Controls.Add(this.txtTC);
-            this.groupBox8.Controls.Add(this.label14);
-            this.groupBox8.Controls.Add(this.txtKullaniciParola);
-            this.groupBox8.Controls.Add(this.label11);
-            this.groupBox8.Controls.Add(this.txtKullaniciAd);
-            this.groupBox8.Controls.Add(this.label13);
-            this.groupBox8.Controls.Add(this.txtSoyad);
-            this.groupBox8.Controls.Add(this.label9);
-            this.groupBox8.Controls.Add(this.btnCalisanSil);
-            this.groupBox8.Controls.Add(this.btnCalisanGuncelle);
-            this.groupBox8.Controls.Add(this.btnCalisanEkle);
-            this.groupBox8.Controls.Add(this.txtAd);
-            this.groupBox8.Controls.Add(this.label3);
-            this.groupBox8.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(25, 15);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(920, 277);
-            this.groupBox8.TabIndex = 0;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Çalışan Ekleme,Güncelleme,Silme";
-            // 
-            // btnCalisanSil
-            // 
-            this.btnCalisanSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCalisanSil.Location = new System.Drawing.Point(751, 212);
-            this.btnCalisanSil.Name = "btnCalisanSil";
-            this.btnCalisanSil.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanSil.TabIndex = 12;
-            this.btnCalisanSil.Text = "Sil";
-            this.btnCalisanSil.UseVisualStyleBackColor = true;
-            this.btnCalisanSil.Click += new System.EventHandler(this.btnCalisanSil_Click);
-            // 
-            // btnCalisanGuncelle
-            // 
-            this.btnCalisanGuncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCalisanGuncelle.Location = new System.Drawing.Point(612, 212);
-            this.btnCalisanGuncelle.Name = "btnCalisanGuncelle";
-            this.btnCalisanGuncelle.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanGuncelle.TabIndex = 11;
-            this.btnCalisanGuncelle.Text = "Güncelle";
-            this.btnCalisanGuncelle.UseVisualStyleBackColor = true;
-            this.btnCalisanGuncelle.Click += new System.EventHandler(this.btnCalisanGuncelle_Click);
-            // 
-            // btnCalisanEkle
-            // 
-            this.btnCalisanEkle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCalisanEkle.Location = new System.Drawing.Point(477, 212);
-            this.btnCalisanEkle.Name = "btnCalisanEkle";
-            this.btnCalisanEkle.Size = new System.Drawing.Size(105, 42);
-            this.btnCalisanEkle.TabIndex = 10;
-            this.btnCalisanEkle.Text = "Çalışan Ekle";
-            this.btnCalisanEkle.UseVisualStyleBackColor = true;
-            this.btnCalisanEkle.Click += new System.EventHandler(this.btnCalisanEkle_Click);
-            // 
-            // txtAd
-            // 
-            this.txtAd.Location = new System.Drawing.Point(129, 37);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(214, 27);
-            this.txtAd.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(86, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 19);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Ad :";
-            // 
-            // txtSoyad
-            // 
-            this.txtSoyad.Location = new System.Drawing.Point(129, 79);
-            this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(214, 27);
-            this.txtSoyad.TabIndex = 2;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(65, 82);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 19);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Soyad :";
-            // 
-            // txtKullaniciParola
-            // 
-            this.txtKullaniciParola.Location = new System.Drawing.Point(129, 166);
-            this.txtKullaniciParola.Name = "txtKullaniciParola";
-            this.txtKullaniciParola.Size = new System.Drawing.Size(214, 27);
-            this.txtKullaniciParola.TabIndex = 4;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(6, 169);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 19);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Kullanıcı Parola :";
-            // 
-            // txtKullaniciAd
-            // 
-            this.txtKullaniciAd.Location = new System.Drawing.Point(129, 122);
-            this.txtKullaniciAd.Name = "txtKullaniciAd";
-            this.txtKullaniciAd.Size = new System.Drawing.Size(214, 27);
-            this.txtKullaniciAd.TabIndex = 3;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(30, 125);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 19);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Kullanıcı Ad :";
-            // 
-            // txtTC
-            // 
-            this.txtTC.Location = new System.Drawing.Point(582, 37);
-            this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(256, 27);
-            this.txtTC.TabIndex = 5;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(433, 40);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(143, 19);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "TC Kimlik Numarası :";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(473, 122);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 19);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "İşe Giriş Tarihi :";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(473, 79);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(103, 19);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "Doğum Tarihi :";
-            // 
-            // dateTimeDogumTarih
-            // 
-            this.dateTimeDogumTarih.Location = new System.Drawing.Point(582, 77);
-            this.dateTimeDogumTarih.Name = "dateTimeDogumTarih";
-            this.dateTimeDogumTarih.Size = new System.Drawing.Size(256, 27);
-            this.dateTimeDogumTarih.TabIndex = 6;
-            // 
-            // dateTimeIseGirisTarih
-            // 
-            this.dateTimeIseGirisTarih.Location = new System.Drawing.Point(582, 116);
-            this.dateTimeIseGirisTarih.Name = "dateTimeIseGirisTarih";
-            this.dateTimeIseGirisTarih.Size = new System.Drawing.Size(256, 27);
-            this.dateTimeIseGirisTarih.TabIndex = 7;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(483, 166);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(93, 19);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Admin Yetki :";
-            // 
-            // rdbAdmin
-            // 
-            this.rdbAdmin.AutoSize = true;
-            this.rdbAdmin.Location = new System.Drawing.Point(582, 162);
-            this.rdbAdmin.Name = "rdbAdmin";
-            this.rdbAdmin.Size = new System.Drawing.Size(48, 23);
-            this.rdbAdmin.TabIndex = 8;
-            this.rdbAdmin.TabStop = true;
-            this.rdbAdmin.Text = "Var";
-            this.rdbAdmin.UseVisualStyleBackColor = true;
-            // 
-            // rdbAdminDegil
-            // 
-            this.rdbAdminDegil.AutoSize = true;
-            this.rdbAdminDegil.Location = new System.Drawing.Point(727, 162);
-            this.rdbAdminDegil.Name = "rdbAdminDegil";
-            this.rdbAdminDegil.Size = new System.Drawing.Size(49, 23);
-            this.rdbAdminDegil.TabIndex = 9;
-            this.rdbAdminDegil.TabStop = true;
-            this.rdbAdminDegil.Text = "Yok";
-            this.rdbAdminDegil.UseVisualStyleBackColor = true;
+            // lblUyariFilm
+            // 
+            this.lblUyariFilm.AutoSize = true;
+            this.lblUyariFilm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariFilm.Location = new System.Drawing.Point(89, 23);
+            this.lblUyariFilm.Name = "lblUyariFilm";
+            this.lblUyariFilm.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariFilm.TabIndex = 16;
+            this.lblUyariFilm.Text = "Tüm alanların doldurulması zorunludur.";
+            // 
+            // lblUyariSalon
+            // 
+            this.lblUyariSalon.AutoSize = true;
+            this.lblUyariSalon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariSalon.Location = new System.Drawing.Point(96, 23);
+            this.lblUyariSalon.Name = "lblUyariSalon";
+            this.lblUyariSalon.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariSalon.TabIndex = 17;
+            this.lblUyariSalon.Text = "Tüm alanların doldurulması zorunludur.";
+            // 
+            // lblUyariSeans
+            // 
+            this.lblUyariSeans.AutoSize = true;
+            this.lblUyariSeans.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariSeans.Location = new System.Drawing.Point(116, 36);
+            this.lblUyariSeans.Name = "lblUyariSeans";
+            this.lblUyariSeans.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariSeans.TabIndex = 17;
+            this.lblUyariSeans.Text = "Tüm alanların doldurulması zorunludur.";
+            // 
+            // lblUyariCalisan
+            // 
+            this.lblUyariCalisan.AutoSize = true;
+            this.lblUyariCalisan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariCalisan.Location = new System.Drawing.Point(125, 15);
+            this.lblUyariCalisan.Name = "lblUyariCalisan";
+            this.lblUyariCalisan.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariCalisan.TabIndex = 30;
+            this.lblUyariCalisan.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // Admin
             // 
@@ -827,31 +875,33 @@
             this.ClientSize = new System.Drawing.Size(1009, 707);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1025, 746);
+            this.MinimumSize = new System.Drawing.Size(1025, 746);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Paneli";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.tabPageCalisan.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.tabPageSeans.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeans)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.tabPageSalon.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalon)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.tabPageFilm.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilm)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalon)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeans)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -923,5 +973,9 @@
         private System.Windows.Forms.Button btnCalisanEkle;
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblUyariFilm;
+        private System.Windows.Forms.Label lblUyariCalisan;
+        private System.Windows.Forms.Label lblUyariSeans;
+        private System.Windows.Forms.Label lblUyariSalon;
     }
 }

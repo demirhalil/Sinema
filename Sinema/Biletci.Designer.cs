@@ -120,6 +120,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rdbIptalNormal = new System.Windows.Forms.RadioButton();
+            this.rdbIptalOgrenci = new System.Windows.Forms.RadioButton();
+            this.label23 = new System.Windows.Forms.Label();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnIptal = new System.Windows.Forms.Button();
             this.numericUpDownIptalBiletAdet = new System.Windows.Forms.NumericUpDown();
@@ -138,9 +141,14 @@
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridViewBilet = new System.Windows.Forms.DataGridView();
-            this.rdbIptalNormal = new System.Windows.Forms.RadioButton();
-            this.rdbIptalOgrenci = new System.Windows.Forms.RadioButton();
-            this.label23 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblUyari = new System.Windows.Forms.Label();
+            this.lblUyariGuncelleme = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -152,6 +160,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIptalBiletAdet)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBilet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -167,6 +178,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblUyari);
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -1003,6 +1015,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.label29);
+            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.radioButton2);
             this.groupBox2.Controls.Add(this.rbOgrenci);
             this.groupBox2.Controls.Add(this.label21);
@@ -1020,7 +1038,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(27, 292);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 372);
+            this.groupBox2.Size = new System.Drawing.Size(320, 462);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Müşteri Bilgileri";
@@ -1232,6 +1250,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lblUyariGuncelleme);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1270,6 +1289,38 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Bilet İptal";
+            // 
+            // rdbIptalNormal
+            // 
+            this.rdbIptalNormal.AutoSize = true;
+            this.rdbIptalNormal.Location = new System.Drawing.Point(306, 269);
+            this.rdbIptalNormal.Name = "rdbIptalNormal";
+            this.rdbIptalNormal.Size = new System.Drawing.Size(72, 22);
+            this.rdbIptalNormal.TabIndex = 22;
+            this.rdbIptalNormal.TabStop = true;
+            this.rdbIptalNormal.Text = "Normal";
+            this.rdbIptalNormal.UseVisualStyleBackColor = true;
+            // 
+            // rdbIptalOgrenci
+            // 
+            this.rdbIptalOgrenci.AutoSize = true;
+            this.rdbIptalOgrenci.Location = new System.Drawing.Point(125, 268);
+            this.rdbIptalOgrenci.Name = "rdbIptalOgrenci";
+            this.rdbIptalOgrenci.Size = new System.Drawing.Size(73, 22);
+            this.rdbIptalOgrenci.TabIndex = 21;
+            this.rdbIptalOgrenci.TabStop = true;
+            this.rdbIptalOgrenci.Text = "Öğrenci";
+            this.rdbIptalOgrenci.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Location = new System.Drawing.Point(37, 269);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 19);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "Durum :";
             // 
             // btnGuncelle
             // 
@@ -1445,37 +1496,82 @@
             this.dataGridViewBilet.TabIndex = 13;
             this.dataGridViewBilet.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBilet_CellMouseClick);
             // 
-            // rdbIptalNormal
+            // label28
             // 
-            this.rdbIptalNormal.AutoSize = true;
-            this.rdbIptalNormal.Location = new System.Drawing.Point(306, 269);
-            this.rdbIptalNormal.Name = "rdbIptalNormal";
-            this.rdbIptalNormal.Size = new System.Drawing.Size(72, 22);
-            this.rdbIptalNormal.TabIndex = 22;
-            this.rdbIptalNormal.TabStop = true;
-            this.rdbIptalNormal.Text = "Normal";
-            this.rdbIptalNormal.UseVisualStyleBackColor = true;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(25, 420);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(32, 19);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Boş";
             // 
-            // rdbIptalOgrenci
+            // pictureBox1
             // 
-            this.rdbIptalOgrenci.AutoSize = true;
-            this.rdbIptalOgrenci.Location = new System.Drawing.Point(125, 268);
-            this.rdbIptalOgrenci.Name = "rdbIptalOgrenci";
-            this.rdbIptalOgrenci.Size = new System.Drawing.Size(73, 22);
-            this.rdbIptalOgrenci.TabIndex = 21;
-            this.rdbIptalOgrenci.TabStop = true;
-            this.rdbIptalOgrenci.Text = "Öğrenci";
-            this.rdbIptalOgrenci.UseVisualStyleBackColor = true;
+            this.pictureBox1.BackColor = System.Drawing.Color.Chartreuse;
+            this.pictureBox1.Location = new System.Drawing.Point(18, 367);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
-            // label23
+            // label29
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(37, 269);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 19);
-            this.label23.TabIndex = 20;
-            this.label23.Text = "Durum :";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(122, 420);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(60, 19);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Rezerve";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Orange;
+            this.pictureBox2.Location = new System.Drawing.Point(124, 367);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label30.Location = new System.Drawing.Point(238, 420);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(39, 19);
+            this.label30.TabIndex = 22;
+            this.label30.Text = "Dolu";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Red;
+            this.pictureBox3.Location = new System.Drawing.Point(231, 367);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblUyari
+            // 
+            this.lblUyari.AutoSize = true;
+            this.lblUyari.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyari.Location = new System.Drawing.Point(23, 3);
+            this.lblUyari.Name = "lblUyari";
+            this.lblUyari.Size = new System.Drawing.Size(259, 19);
+            this.lblUyari.TabIndex = 15;
+            this.lblUyari.Text = "Tüm alanların doldurulması zorunludur.";
+            // 
+            // lblUyariGuncelleme
+            // 
+            this.lblUyariGuncelleme.AutoSize = true;
+            this.lblUyariGuncelleme.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariGuncelleme.Location = new System.Drawing.Point(8, 3);
+            this.lblUyariGuncelleme.Name = "lblUyariGuncelleme";
+            this.lblUyariGuncelleme.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariGuncelleme.TabIndex = 16;
+            this.lblUyariGuncelleme.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // Biletci
             // 
@@ -1492,6 +1588,7 @@
             this.Load += new System.EventHandler(this.Biletci_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1500,11 +1597,15 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIptalBiletAdet)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBilet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1623,5 +1724,13 @@
         private System.Windows.Forms.RadioButton rdbIptalNormal;
         private System.Windows.Forms.RadioButton rdbIptalOgrenci;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblUyari;
+        private System.Windows.Forms.Label lblUyariGuncelleme;
     }
 }

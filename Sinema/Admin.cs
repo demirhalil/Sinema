@@ -22,7 +22,10 @@ namespace Sinema
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            
+            lblUyariFilm.Visible = false;
+            lblUyariSalon.Visible = false;
+            lblUyariSeans.Visible = false;
+            lblUyariCalisan.Visible = false;
             if (tabControl1.SelectedIndex == 0)
             {
                 filmCek();
@@ -155,7 +158,9 @@ namespace Sinema
             else
             {
                 filmCek();
-                MessageBox.Show("Film ekleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Film ekleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariFilm.Visible = true;
+                lblUyariFilm.ForeColor = Color.Red;
                 filmTemizle();
             }
 
@@ -197,7 +202,9 @@ namespace Sinema
             else
             {
                 filmCek();
-                MessageBox.Show("Film güncelleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Film güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariFilm.Visible = true;
+                lblUyariFilm.ForeColor = Color.Red;
                 filmTemizle();
 
             }
@@ -277,7 +284,9 @@ namespace Sinema
             else
             {
                 salonCek();
-                MessageBox.Show("Salon ekleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Salon ekleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariSalon.Visible = true;
+                lblUyariSalon.ForeColor = Color.Red;
                 salonTemizle();
             }
         }
@@ -306,7 +315,9 @@ namespace Sinema
             else
             {
                 salonCek();
-                MessageBox.Show("Salon güncelleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Salon güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariSalon.Visible = true;
+                lblUyariSalon.ForeColor = Color.Red;
                 salonTemizle();
 
             }
@@ -374,7 +385,9 @@ namespace Sinema
             else
             {
                 seansCek();
-                MessageBox.Show("Seans ekleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Seans ekleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariSeans.Visible = true;
+                lblUyariSeans.ForeColor = Color.Red;
                 seansTemizle();
             }
         }
@@ -400,7 +413,9 @@ namespace Sinema
             else
             {
                 seansCek();
-                MessageBox.Show("Seans güncelleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Seans güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariSeans.Visible = true;
+                lblUyariSeans.ForeColor = Color.Red;
                 seansTemizle();
 
             }
@@ -494,7 +509,9 @@ namespace Sinema
             else
             {
                 calisanCek();
-                MessageBox.Show("Çalışan ekleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Çalışan ekleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariCalisan.Visible = true;
+                lblUyariCalisan.ForeColor = Color.Red;
                 calisanTemizle();
             }
         }
@@ -539,7 +556,9 @@ namespace Sinema
             else
             {
                 calisanCek();
-                MessageBox.Show("Çalışan güncelleme işlemi gerçekleştirilemedi.Lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Çalışan güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblUyariCalisan.Visible = true;
+                lblUyariCalisan.ForeColor = Color.Red;
                 calisanTemizle();
             }
         }

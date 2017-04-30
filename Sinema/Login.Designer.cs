@@ -42,8 +42,9 @@
             // 
             this.txtParola.Location = new System.Drawing.Point(164, 168);
             this.txtParola.Name = "txtParola";
+            this.txtParola.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(241, 20);
-            this.txtParola.TabIndex = 11;
+            this.txtParola.TabIndex = 1;
             // 
             // label4
             // 
@@ -60,7 +61,7 @@
             this.txtKullaniciAd.Location = new System.Drawing.Point(164, 121);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Size = new System.Drawing.Size(241, 20);
-            this.txtKullaniciAd.TabIndex = 9;
+            this.txtKullaniciAd.TabIndex = 0;
             // 
             // label1
             // 
@@ -89,7 +90,7 @@
             this.btnGiris.Location = new System.Drawing.Point(291, 208);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(114, 42);
-            this.btnGiris.TabIndex = 14;
+            this.btnGiris.TabIndex = 2;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = true;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);

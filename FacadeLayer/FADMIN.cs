@@ -79,7 +79,7 @@ namespace FacadeLayer
             }
             catch
             {
-                sonuc = true;
+                sonuc = false;
             }
 
             return sonuc;
@@ -293,7 +293,7 @@ namespace FacadeLayer
             }
             catch
             {
-                sonuc = true;
+                sonuc = false;
             }
 
             return sonuc;
@@ -689,7 +689,7 @@ namespace FacadeLayer
             }
             catch
             {
-                sonuc = true;
+                sonuc = false;
             }
 
             return sonuc;
