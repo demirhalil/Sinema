@@ -334,6 +334,7 @@ namespace Sinema
             else
             {
                 lblFiyat.Visible = true;
+                lblFiyat.ForeColor = Color.Yellow;
                 MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtAd.Clear();
                 txtSoyad.Clear();
