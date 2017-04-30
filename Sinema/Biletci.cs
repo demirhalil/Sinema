@@ -372,6 +372,7 @@ namespace Sinema
         {
             biletAyir();
             doluKoltuklariCek();
+            lblFiyat.Visible = false;
             
         }
 
@@ -405,12 +406,11 @@ namespace Sinema
             item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);
 
             if (BLLBILETCI.Bilet_Update(item))
-            {
-                doluKoltuklariCek();
+            {            
                 MessageBox.Show("Seçilen biletler başarılı bir şekilde güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 biletTemizle();
-                Application.Restart();
-
+                biletCek();
+                doluKoltuklariCek();
             }
             else
             {
