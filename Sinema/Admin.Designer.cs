@@ -33,6 +33,7 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dataGridViewCalisan = new System.Windows.Forms.DataGridView();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.lblUyariCalisan = new System.Windows.Forms.Label();
             this.rdbAdminDegil = new System.Windows.Forms.RadioButton();
             this.rdbAdmin = new System.Windows.Forms.RadioButton();
             this.label17 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridViewSeans = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblUyariSeans = new System.Windows.Forms.Label();
             this.btnSeansSil = new System.Windows.Forms.Button();
             this.btnSeansGuncelle = new System.Windows.Forms.Button();
             this.btnSeansEkle = new System.Windows.Forms.Button();
@@ -66,6 +68,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridViewSalon = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblUyariSalon = new System.Windows.Forms.Label();
             this.btnSalonSil = new System.Windows.Forms.Button();
             this.btnSalonGuncelle = new System.Windows.Forms.Button();
             this.btnSalonEkle = new System.Windows.Forms.Button();
@@ -77,6 +80,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewFilm = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblUyariFilm = new System.Windows.Forms.Label();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnFilmEkle = new System.Windows.Forms.Button();
@@ -94,10 +98,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.lblUyariFilm = new System.Windows.Forms.Label();
-            this.lblUyariSalon = new System.Windows.Forms.Label();
-            this.lblUyariSeans = new System.Windows.Forms.Label();
-            this.lblUyariCalisan = new System.Windows.Forms.Label();
             this.tabPageCalisan.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).BeginInit();
@@ -185,6 +185,16 @@
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Çalışan Ekleme,Güncelleme,Silme";
+            // 
+            // lblUyariCalisan
+            // 
+            this.lblUyariCalisan.AutoSize = true;
+            this.lblUyariCalisan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariCalisan.Location = new System.Drawing.Point(125, 15);
+            this.lblUyariCalisan.Name = "lblUyariCalisan";
+            this.lblUyariCalisan.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariCalisan.TabIndex = 30;
+            this.lblUyariCalisan.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // rdbAdminDegil
             // 
@@ -424,6 +434,16 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Seans Ekleme,Güncelleme,Silme";
             // 
+            // lblUyariSeans
+            // 
+            this.lblUyariSeans.AutoSize = true;
+            this.lblUyariSeans.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariSeans.Location = new System.Drawing.Point(116, 36);
+            this.lblUyariSeans.Name = "lblUyariSeans";
+            this.lblUyariSeans.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariSeans.TabIndex = 17;
+            this.lblUyariSeans.Text = "Tüm alanların doldurulması zorunludur.";
+            // 
             // btnSeansSil
             // 
             this.btnSeansSil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -529,6 +549,16 @@
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Salon Ekleme,Güncelleme,Silme";
+            // 
+            // lblUyariSalon
+            // 
+            this.lblUyariSalon.AutoSize = true;
+            this.lblUyariSalon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariSalon.Location = new System.Drawing.Point(96, 23);
+            this.lblUyariSalon.Name = "lblUyariSalon";
+            this.lblUyariSalon.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariSalon.TabIndex = 17;
+            this.lblUyariSalon.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // btnSalonSil
             // 
@@ -662,6 +692,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Film Ekleme,Güncelleme,Silme";
+            // 
+            // lblUyariFilm
+            // 
+            this.lblUyariFilm.AutoSize = true;
+            this.lblUyariFilm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariFilm.Location = new System.Drawing.Point(89, 23);
+            this.lblUyariFilm.Name = "lblUyariFilm";
+            this.lblUyariFilm.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariFilm.TabIndex = 16;
+            this.lblUyariFilm.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // btnSil
             // 
@@ -827,46 +867,6 @@
             this.tabControl1.Size = new System.Drawing.Size(978, 681);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // lblUyariFilm
-            // 
-            this.lblUyariFilm.AutoSize = true;
-            this.lblUyariFilm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyariFilm.Location = new System.Drawing.Point(89, 23);
-            this.lblUyariFilm.Name = "lblUyariFilm";
-            this.lblUyariFilm.Size = new System.Drawing.Size(259, 19);
-            this.lblUyariFilm.TabIndex = 16;
-            this.lblUyariFilm.Text = "Tüm alanların doldurulması zorunludur.";
-            // 
-            // lblUyariSalon
-            // 
-            this.lblUyariSalon.AutoSize = true;
-            this.lblUyariSalon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyariSalon.Location = new System.Drawing.Point(96, 23);
-            this.lblUyariSalon.Name = "lblUyariSalon";
-            this.lblUyariSalon.Size = new System.Drawing.Size(259, 19);
-            this.lblUyariSalon.TabIndex = 17;
-            this.lblUyariSalon.Text = "Tüm alanların doldurulması zorunludur.";
-            // 
-            // lblUyariSeans
-            // 
-            this.lblUyariSeans.AutoSize = true;
-            this.lblUyariSeans.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyariSeans.Location = new System.Drawing.Point(116, 36);
-            this.lblUyariSeans.Name = "lblUyariSeans";
-            this.lblUyariSeans.Size = new System.Drawing.Size(259, 19);
-            this.lblUyariSeans.TabIndex = 17;
-            this.lblUyariSeans.Text = "Tüm alanların doldurulması zorunludur.";
-            // 
-            // lblUyariCalisan
-            // 
-            this.lblUyariCalisan.AutoSize = true;
-            this.lblUyariCalisan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyariCalisan.Location = new System.Drawing.Point(125, 15);
-            this.lblUyariCalisan.Name = "lblUyariCalisan";
-            this.lblUyariCalisan.Size = new System.Drawing.Size(259, 19);
-            this.lblUyariCalisan.TabIndex = 30;
-            this.lblUyariCalisan.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // Admin
             // 

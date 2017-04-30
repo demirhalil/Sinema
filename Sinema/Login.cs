@@ -28,10 +28,10 @@ namespace Sinema
             {
                 if (item.KullaniciAd == txtKullaniciAd.Text && item.KullaniciParola == txtParola.Text && item.AdminYetki == true)
                 {
-                    Admin frmAdmin = new Admin();
-                    frmAdmin.ShowDialog();
-                    this.Close();
-                    break;
+                   Admin frm = new Admin();
+                   frm.ShowDialog();
+                   this.Close();
+                   break;
                 }
 
                 else if (item.KullaniciAd == txtKullaniciAd.Text && item.KullaniciParola == txtParola.Text && item.AdminYetki == false)
@@ -47,7 +47,7 @@ namespace Sinema
                     lblHata.Visible = true;
                     lblHata.ForeColor = System.Drawing.Color.Red;
                     continue;                 
-                }              
+                }           
             }
         }
 
