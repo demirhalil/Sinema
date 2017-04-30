@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Biletci));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblUyari = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn54 = new System.Windows.Forms.Button();
             this.btn53 = new System.Windows.Forms.Button();
@@ -97,6 +98,12 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.rbOgrenci = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
@@ -119,6 +126,7 @@
             this.cmbFilm = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblUyariGuncelleme = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rdbIptalNormal = new System.Windows.Forms.RadioButton();
             this.rdbIptalOgrenci = new System.Windows.Forms.RadioButton();
@@ -141,18 +149,13 @@
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridViewBilet = new System.Windows.Forms.DataGridView();
-            this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblUyari = new System.Windows.Forms.Label();
-            this.lblUyariGuncelleme = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericBiletAdet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -160,9 +163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIptalBiletAdet)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBilet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -189,6 +189,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bilet Kesim";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblUyari
+            // 
+            this.lblUyari.AutoSize = true;
+            this.lblUyari.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyari.Location = new System.Drawing.Point(23, 3);
+            this.lblUyari.Name = "lblUyari";
+            this.lblUyari.Size = new System.Drawing.Size(259, 19);
+            this.lblUyari.TabIndex = 15;
+            this.lblUyari.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // groupBox3
             // 
@@ -1043,6 +1053,63 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Müşteri Bilgileri";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label30.Location = new System.Drawing.Point(238, 420);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(39, 19);
+            this.label30.TabIndex = 22;
+            this.label30.Text = "Dolu";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Red;
+            this.pictureBox3.Location = new System.Drawing.Point(231, 367);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(122, 420);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(60, 19);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Rezerve";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Orange;
+            this.pictureBox2.Location = new System.Drawing.Point(124, 367);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(25, 420);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(32, 19);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Boş";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Chartreuse;
+            this.pictureBox1.Location = new System.Drawing.Point(18, 367);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -1092,9 +1159,8 @@
             this.lblFiyat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblFiyat.Location = new System.Drawing.Point(94, 321);
             this.lblFiyat.Name = "lblFiyat";
-            this.lblFiyat.Size = new System.Drawing.Size(48, 19);
+            this.lblFiyat.Size = new System.Drawing.Size(0, 19);
             this.lblFiyat.TabIndex = 11;
-            this.lblFiyat.Text = "Fiyat :";
             // 
             // label8
             // 
@@ -1260,6 +1326,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bilet İptal Et";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblUyariGuncelleme
+            // 
+            this.lblUyariGuncelleme.AutoSize = true;
+            this.lblUyariGuncelleme.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUyariGuncelleme.Location = new System.Drawing.Point(8, 3);
+            this.lblUyariGuncelleme.Name = "lblUyariGuncelleme";
+            this.lblUyariGuncelleme.Size = new System.Drawing.Size(259, 19);
+            this.lblUyariGuncelleme.TabIndex = 16;
+            this.lblUyariGuncelleme.Text = "Tüm alanların doldurulması zorunludur.";
             // 
             // groupBox5
             // 
@@ -1496,83 +1572,6 @@
             this.dataGridViewBilet.TabIndex = 13;
             this.dataGridViewBilet.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewBilet_CellMouseClick);
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label28.Location = new System.Drawing.Point(25, 420);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 19);
-            this.label28.TabIndex = 18;
-            this.label28.Text = "Boş";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Chartreuse;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 367);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label29.Location = new System.Drawing.Point(122, 420);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 19);
-            this.label29.TabIndex = 20;
-            this.label29.Text = "Rezerve";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Orange;
-            this.pictureBox2.Location = new System.Drawing.Point(124, 367);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(58, 50);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label30.Location = new System.Drawing.Point(238, 420);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(39, 19);
-            this.label30.TabIndex = 22;
-            this.label30.Text = "Dolu";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Red;
-            this.pictureBox3.Location = new System.Drawing.Point(231, 367);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 50);
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
-            // 
-            // lblUyari
-            // 
-            this.lblUyari.AutoSize = true;
-            this.lblUyari.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyari.Location = new System.Drawing.Point(23, 3);
-            this.lblUyari.Name = "lblUyari";
-            this.lblUyari.Size = new System.Drawing.Size(259, 19);
-            this.lblUyari.TabIndex = 15;
-            this.lblUyari.Text = "Tüm alanların doldurulması zorunludur.";
-            // 
-            // lblUyariGuncelleme
-            // 
-            this.lblUyariGuncelleme.AutoSize = true;
-            this.lblUyariGuncelleme.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUyariGuncelleme.Location = new System.Drawing.Point(8, 3);
-            this.lblUyariGuncelleme.Name = "lblUyariGuncelleme";
-            this.lblUyariGuncelleme.Size = new System.Drawing.Size(259, 19);
-            this.lblUyariGuncelleme.TabIndex = 16;
-            this.lblUyariGuncelleme.Text = "Tüm alanların doldurulması zorunludur.";
-            // 
             // Biletci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1593,6 +1592,9 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericBiletAdet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1603,9 +1605,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIptalBiletAdet)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBilet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
