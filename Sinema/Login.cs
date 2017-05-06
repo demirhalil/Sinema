@@ -11,6 +11,7 @@ using EntityLayer;
 using FacadeLayer;
 using BusinessLogicLayer;
 
+
 namespace Sinema
 {
     public partial class Login : Form
@@ -30,8 +31,7 @@ namespace Sinema
                 {
                    Admin frm = new Admin();
                    frm.ShowDialog();
-                   this.Close();
-                   break;
+                   this.Close();                  
                 }
 
                 else if (item.KullaniciAd == txtKullaniciAd.Text && item.KullaniciParola == txtParola.Text && item.AdminYetki == false)
@@ -39,7 +39,6 @@ namespace Sinema
                     Biletci frmBiletci = new Biletci();
                     frmBiletci.ShowDialog();
                     this.Close();
-                    break;
                 }
 
                 else

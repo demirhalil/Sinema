@@ -13,6 +13,7 @@ using EntityLayer;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using FacadeLayer;
+using System.Threading;
 
 namespace Sinema
 {
@@ -22,7 +23,7 @@ namespace Sinema
         {
             InitializeComponent();
         }
-
+        Thread kanal;
         ArrayList koltuklar = new ArrayList();
         ArrayList iptalKoltuk = new ArrayList();
 
@@ -188,7 +189,7 @@ namespace Sinema
         //Koltuk seçimi yaparken koltukların rengini değiştiren kodlar.
         private void btnKoltuk_Click(object sender, EventArgs e)
         {
-            if (((Button)sender).BackColor == Color.Chartreuse) // yeşil
+            if (((Button)sender).BackColor == Color.Chartreuse) 
 
             {
 
@@ -205,7 +206,7 @@ namespace Sinema
                 
             }
 
-            else if (((Button)sender).BackColor == Color.Orange) // turuncu
+            else if (((Button)sender).BackColor == Color.Orange) 
 
             {
 
@@ -223,7 +224,7 @@ namespace Sinema
 
             }
 
-            else // kırmızı
+            else 
 
             {
 
@@ -235,7 +236,7 @@ namespace Sinema
 
                 }
 
-                else //www.gorselprogramlama.com
+                else 
 
                 {
 
@@ -429,8 +430,7 @@ namespace Sinema
             {
                 this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Chartreuse;
             }
-        }
-
+        }     
         
     }
 }

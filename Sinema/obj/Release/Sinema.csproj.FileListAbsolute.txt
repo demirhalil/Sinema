@@ -1,0 +1,17 @@
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\Sinema.exe.config
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\Sinema.exe
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\Sinema.pdb
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\BusinessLogicLayer.dll
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\EntityLayer.dll
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\FacadeLayer.dll
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\BusinessLogicLayer.pdb
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\EntityLayer.pdb
+D:\C#_Projeleri\Sinema\Sinema\bin\Release\FacadeLayer.pdb
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.Admin.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.Biletci.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.Login.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.Properties.Resources.resources
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.csproj.GenerateResource.Cache
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.exe
+D:\C#_Projeleri\Sinema\Sinema\obj\Release\Sinema.pdb

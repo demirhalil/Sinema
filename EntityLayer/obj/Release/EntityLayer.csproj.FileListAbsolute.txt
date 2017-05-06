@@ -1,0 +1,5 @@
+D:\C#_Projeleri\Sinema\EntityLayer\bin\Release\EntityLayer.dll
+D:\C#_Projeleri\Sinema\EntityLayer\bin\Release\EntityLayer.pdb
+D:\C#_Projeleri\Sinema\EntityLayer\obj\Release\EntityLayer.csprojResolveAssemblyReference.cache
+D:\C#_Projeleri\Sinema\EntityLayer\obj\Release\EntityLayer.dll
+D:\C#_Projeleri\Sinema\EntityLayer\obj\Release\EntityLayer.pdb
