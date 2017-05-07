@@ -23,7 +23,6 @@ namespace Sinema
         {
             InitializeComponent();
         }
-        Thread kanal;
         ArrayList koltuklar = new ArrayList();
         ArrayList iptalKoltuk = new ArrayList();
 
@@ -113,6 +112,7 @@ namespace Sinema
 
         private void doluKoltuklariCek()
         {
+            
             List<EBILET> itemlist = BLLBILETCI.Bilet_SelectList();
 
             string koltuk = "";
@@ -379,6 +379,7 @@ namespace Sinema
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+
             EBILET item = new EBILET();
 
             item.BiletID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["BiletID"].Value.ToString());
@@ -390,7 +391,7 @@ namespace Sinema
             item.Koltuk = dataGridViewBilet.SelectedRows[0].Cells["Koltuk Numaraları"].Value.ToString();
             item.BiletAdet = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Bilet Adedi"].Value.ToString());
             item.Ucret = Convert.ToDecimal(dataGridViewBilet.SelectedRows[0].Cells["Ücret"].Value.ToString());
-
+            
             decimal ucret;
 
             if (rbOgrenci.Checked) ucret = 6;
@@ -404,13 +405,13 @@ namespace Sinema
             item.MusteriSoyad = txtIptalSoyad.Text;
             item.Koltuk = txtIptalKoltuk.Text;
             item.BiletAdet = Convert.ToInt32(numericUpDownIptalBiletAdet.Value);
-            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);
+            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);           
 
             if (BLLBILETCI.Bilet_Update(item))
-            {            
+            {
                 MessageBox.Show("Seçilen biletler başarılı bir şekilde güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 biletTemizle();
-                biletCek();
+                biletCek();              
                 doluKoltuklariCek();
             }
             else
@@ -420,6 +421,7 @@ namespace Sinema
                 lblUyariGuncelleme.ForeColor = Color.Red;
 
             }
+            this.Refresh();
         }
 
         //İptal edilen koltukların rengini değiştirmek için.
@@ -431,7 +433,8 @@ namespace Sinema
                 this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Chartreuse;
             }
         }     
-        
+
+              
     }
 }
 
