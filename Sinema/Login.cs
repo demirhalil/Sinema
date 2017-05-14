@@ -29,6 +29,7 @@ namespace Sinema
             {
                 if (item.KullaniciAd == txtKullaniciAd.Text && item.KullaniciParola == txtParola.Text && item.AdminYetki == true)
                 {
+                    lblHata.Visible = false;
                    Admin frm = new Admin();
                    frm.ShowDialog();
                    this.Close();                  
@@ -36,6 +37,7 @@ namespace Sinema
 
                 else if (item.KullaniciAd == txtKullaniciAd.Text && item.KullaniciParola == txtParola.Text && item.AdminYetki == false)
                 {
+                    lblHata.Visible = false;
                     Biletci frmBiletci = new Biletci();
                     frmBiletci.ShowDialog();
                     this.Close();

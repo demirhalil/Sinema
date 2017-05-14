@@ -16,7 +16,7 @@ namespace Sinema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Biletci());
+            Application.Run(new Login());
         }
     }
 }

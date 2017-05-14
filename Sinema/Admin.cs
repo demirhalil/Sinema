@@ -78,7 +78,10 @@ namespace Sinema
             dataGridViewFilm.Columns["Yönetmen"].Width = 150;
             dataGridViewFilm.Columns["Filmin Süresi"].Width = 125;
             dataGridViewFilm.Columns["Yayın Tarihi"].Width = 125;
-            dataGridViewFilm.Columns["Aktif"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewFilm.Columns["Aktif"].Width = 50;
+            dataGridViewFilm.Columns["Filmin Kategorisi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            satirRenklendir(dataGridViewFilm);
         }
 
         private void salonCek()
@@ -92,6 +95,8 @@ namespace Sinema
             dataGridViewSalon.Columns["SalonID"].Visible = false;
             dataGridViewSalon.Columns["Salon Adı"].Width = 400;
             dataGridViewSalon.Columns["Salon Kapasitesi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            satirRenklendir(dataGridViewSalon);
         }
 
         private void seansCek()
@@ -104,6 +109,8 @@ namespace Sinema
             dataGridViewSeans.DataSource = dt;
             dataGridViewSeans.Columns["Seans Numarası"].Width = 400;
             dataGridViewSeans.Columns["Seans Saati"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            satirRenklendir(dataGridViewSeans);
         }
 
         private void calisanCek()
@@ -129,6 +136,8 @@ namespace Sinema
             dataGridViewCalisan.Columns["İşe Giriş Tarihi"].Width = 100;
             dataGridViewCalisan.Columns["TC Kimlik Numarası"].Width = 100;
             dataGridViewCalisan.Columns["Admin Yetkisi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            satirRenklendir(dataGridViewCalisan);
         }
 
         //Film işlemlerinin yapıldığı kontroller.
@@ -153,6 +162,7 @@ namespace Sinema
                 filmCek();
                 MessageBox.Show("Film ekleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 filmTemizle();
+                lblUyariFilm.Visible = false;
             }
 
             else
@@ -197,6 +207,7 @@ namespace Sinema
                 filmCek();
                 MessageBox.Show("Film güncelleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 filmTemizle();
+                lblUyariFilm.Visible = false;
             }
 
             else
@@ -279,6 +290,7 @@ namespace Sinema
                 salonCek();
                 MessageBox.Show("Salon ekleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 salonTemizle();
+                lblUyariSalon.Visible = false;
             }
 
             else
@@ -310,6 +322,7 @@ namespace Sinema
                 salonCek();
                 MessageBox.Show("Salon güncelleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 salonTemizle();
+                lblUyariSalon.Visible = false;
             }
 
             else
@@ -380,6 +393,7 @@ namespace Sinema
                 seansCek();
                 MessageBox.Show("Seans ekleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 seansTemizle();
+                lblUyariSeans.Visible = false;
             }
 
             else
@@ -408,6 +422,7 @@ namespace Sinema
                 seansCek();
                 MessageBox.Show("Seans güncelleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 seansTemizle();
+                lblUyariSeans.Visible = false;
             }
 
             else
@@ -504,6 +519,7 @@ namespace Sinema
                 calisanCek();
                 MessageBox.Show("Çalışan ekleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 calisanTemizle();
+                lblUyariCalisan.Visible = false;
             }
 
             else
@@ -551,6 +567,7 @@ namespace Sinema
                 calisanCek();
                 MessageBox.Show("Çalışan güncelleme işlemi gerçekleştirilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 calisanTemizle();
+                lblUyariCalisan.Visible = false;
             }
 
             else
@@ -584,6 +601,27 @@ namespace Sinema
                 calisanTemizle();
 
             }
+        }
+
+        //DataGridViewler de her satırın farklı renkte olmasını sağlayan metot.
+        private void satirRenklendir(DataGridView dt)
+        {
+
+            int satirSayisi = dt.Rows.Count;
+
+            for (int i = 0; i < satirSayisi; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    continue;
+                }
+
+                else
+                {
+                    dt.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                }
+            }
+
         }
     }
 }

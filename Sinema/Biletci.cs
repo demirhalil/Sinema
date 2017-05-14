@@ -23,6 +23,7 @@ namespace Sinema
         {
             InitializeComponent();
         }
+
         ArrayList koltuklar = new ArrayList();
         ArrayList iptalKoltuk = new ArrayList();
 
@@ -66,6 +67,10 @@ namespace Sinema
             dataGridViewBilet.Columns["Koltuk Numaraları"].Width = 150;
             dataGridViewBilet.Columns["Bilet Adedi"].Width = 100;
             dataGridViewBilet.Columns["Ücret"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //DataGridView satir renklendirme metodu.
+            satirRenklendir(dataGridViewBilet);
+
         }
 
         private void salonCek()
@@ -134,13 +139,14 @@ namespace Sinema
             filmCek();
             salonCek();
             seansCek();
+            biletCek();
             iptalFilmCek();
             iptalSalonCek();
             iptalSeansCek();
             lblFiyat.Visible = false;
             doluKoltuklariCek();
             lblUyari.Visible = false;
-            lblUyariGuncelleme.Visible = false;
+            lblUyariGuncelleme.Visible = false;           
         }
 
         //İptal işlemleri için veriler çekiliyor.
@@ -320,7 +326,19 @@ namespace Sinema
             }
 
 
-            if (BLLBILETCI.Bilet_Insert(item) < 0)
+            if (BLLBILETCI.Bilet_Insert(item) > 0)
+            {
+                lblFiyat.Visible = true;
+                lblFiyat.Text = item.Ucret.ToString() + " " + "TL";
+                lblFiyat.ForeColor = Color.Red;
+                MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtAd.Clear();
+                txtSoyad.Clear();
+                txtKoltuk.Clear();
+                koltuklar.Clear();
+                numericBiletAdet.Value = 0;              
+            }
+            else
             {
                 MessageBox.Show("Bilet alma işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblUyari.Visible = true;
@@ -330,19 +348,6 @@ namespace Sinema
                 {
                     this.Controls.Find("btn" + koltuklar[i].ToString(), true)[0].BackColor = Color.Chartreuse;
                 }
-
-            }
-            else
-            {
-                lblFiyat.Visible = true;
-                lblFiyat.Text = item.Ucret.ToString()+ " " + "TL";
-                lblFiyat.ForeColor = Color.Red;
-                MessageBox.Show("Seçilen biletler başarılı bir şekilde kesilmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtAd.Clear();
-                txtSoyad.Clear();
-                txtKoltuk.Clear();
-                koltuklar.Clear();
-                numericBiletAdet.Value = 0;
             }
 
         }
@@ -379,7 +384,6 @@ namespace Sinema
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-
             EBILET item = new EBILET();
 
             item.BiletID = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["BiletID"].Value.ToString());
@@ -391,7 +395,16 @@ namespace Sinema
             item.Koltuk = dataGridViewBilet.SelectedRows[0].Cells["Koltuk Numaraları"].Value.ToString();
             item.BiletAdet = Convert.ToInt32(dataGridViewBilet.SelectedRows[0].Cells["Bilet Adedi"].Value.ToString());
             item.Ucret = Convert.ToDecimal(dataGridViewBilet.SelectedRows[0].Cells["Ücret"].Value.ToString());
-            
+
+            #region Bilet güncelleme koltuk rengi değiştirme
+            //Bilet güncellemede değitirilen koltuğun rengini değiştiren kodlar
+            string[] values = item.Koltuk.Split(',');
+            for (int i = 0; i < values.Length; i++)
+            {
+                this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Chartreuse;
+            }
+            #endregion
+
             decimal ucret;
 
             if (rbOgrenci.Checked) ucret = 6;
@@ -405,13 +418,13 @@ namespace Sinema
             item.MusteriSoyad = txtIptalSoyad.Text;
             item.Koltuk = txtIptalKoltuk.Text;
             item.BiletAdet = Convert.ToInt32(numericUpDownIptalBiletAdet.Value);
-            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);           
+            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);
 
             if (BLLBILETCI.Bilet_Update(item))
             {
                 MessageBox.Show("Seçilen biletler başarılı bir şekilde güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 biletTemizle();
-                biletCek();              
+                biletCek();             
                 doluKoltuklariCek();
             }
             else
@@ -420,8 +433,7 @@ namespace Sinema
                 lblUyariGuncelleme.Visible = true;
                 lblUyariGuncelleme.ForeColor = Color.Red;
 
-            }
-            this.Refresh();
+            }           
         }
 
         //İptal edilen koltukların rengini değiştirmek için.
@@ -434,7 +446,28 @@ namespace Sinema
             }
         }     
 
-              
+        //DataGridView de her satırın farklı renkte olmasını sağlayan metot.
+        private void satirRenklendir(DataGridView dt)
+        {
+
+            int satirSayisi = dt.Rows.Count;
+
+            for (int i = 0; i < satirSayisi; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    continue;
+                }
+
+                else
+                {
+                    dt.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                }
+            }
+
+        }
+      
+      
     }
 }
 

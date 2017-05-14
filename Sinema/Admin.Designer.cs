@@ -646,7 +646,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(17, 300);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(882, 346);
+            this.groupBox2.Size = new System.Drawing.Size(933, 346);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Film Bilgileri";
@@ -662,7 +662,7 @@
             this.dataGridViewFilm.Name = "dataGridViewFilm";
             this.dataGridViewFilm.ReadOnly = true;
             this.dataGridViewFilm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewFilm.Size = new System.Drawing.Size(872, 314);
+            this.dataGridViewFilm.Size = new System.Drawing.Size(917, 314);
             this.dataGridViewFilm.TabIndex = 17;
             this.dataGridViewFilm.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewFilm_CellMouseClick);
             // 
@@ -688,7 +688,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(17, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(882, 260);
+            this.groupBox1.Size = new System.Drawing.Size(933, 260);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Film Ekleme,Güncelleme,Silme";
