@@ -8,6 +8,7 @@ namespace EntityLayer
 {
     public class ESEANS
     {
+        #region Seans Bilgileri
         private int _SeansID;
         private string _SeansSaat;
 
@@ -36,5 +37,6 @@ namespace EntityLayer
                 _SeansSaat = value;
             }
         }
+        #endregion
     }
 }

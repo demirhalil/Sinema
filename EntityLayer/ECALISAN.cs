@@ -8,6 +8,7 @@ namespace EntityLayer
 {
     public class ECALISAN
     {
+        #region Çalışan Bilgileri
         private int _CalisanID;
         private string _Ad;
         private string _Soyad;
@@ -134,5 +135,6 @@ namespace EntityLayer
                 _AdminYetki = value;
             }
         }
+        #endregion
     }
 }

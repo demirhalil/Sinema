@@ -8,6 +8,7 @@ namespace EntityLayer
 {
     public class ESALON
     {
+        #region Salon Bilgileri
         private int _SalonID;
         private string _SalonAd;
         private int _Kapasite;
@@ -50,5 +51,6 @@ namespace EntityLayer
                 _Kapasite = value;
             }
         }
+        #endregion
     }
 }

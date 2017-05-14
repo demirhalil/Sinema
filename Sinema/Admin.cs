@@ -37,7 +37,8 @@ namespace Sinema
             verileriCek();
         }
 
-        //Verilerin çekildiği metotlar.
+        #region Verilerin Çekildiği Metotlar
+        //Verilerin veritabanından çekildiği metotlar.
         private void verileriCek()
         {
             if (tabControl1.SelectedIndex == 0)
@@ -139,7 +140,9 @@ namespace Sinema
 
             satirRenklendir(dataGridViewCalisan);
         }
+        #endregion
 
+        #region Film İşlemleri
         //Film işlemlerinin yapıldığı kontroller.
         private void btnFilmEkle_Click(object sender, EventArgs e)
         {
@@ -276,7 +279,9 @@ namespace Sinema
 
             rdbAktifDegil.Checked = false;
         }
+        #endregion
 
+        #region Salon İşlemleri
         //Salon işlemlerinin yapıldığı kontroller.
         private void btnSalonEkle_Click(object sender, EventArgs e)
         {
@@ -370,7 +375,9 @@ namespace Sinema
 
             }
         }
+        #endregion
 
+        #region Seans İşlemleri
         //Seans işlemlerinin yapıldığı kontroller.
         private void seansTemizle()
         {
@@ -458,7 +465,9 @@ namespace Sinema
 
             }
         }
+        #endregion
 
+        #region Çalışan İşlemleri
         //Çalışan işlemlerinin yapıldığı knotroler.
         private void calisanTemizle()
         {
@@ -602,6 +611,7 @@ namespace Sinema
 
             }
         }
+        #endregion
 
         //DataGridViewler de her satırın farklı renkte olmasını sağlayan metot.
         private void satirRenklendir(DataGridView dt)

@@ -42,7 +42,7 @@ namespace Sinema
                 doluKoltuklariCek();
             }
         }
-
+        
         //Veritabanından Bilet,Film,Salon,Seans,Dolu koltukların verileri çekildi.
         private void biletCek()
         {
@@ -132,7 +132,7 @@ namespace Sinema
             {
                 this.Controls.Find("btn" + values[i], true)[0].BackColor = Color.Red;
             }
-        }
+        }        
 
         private void Biletci_Load(object sender, EventArgs e)
         {
@@ -407,9 +407,11 @@ namespace Sinema
 
             decimal ucret;
 
-            if (rbOgrenci.Checked) ucret = 6;
+            if (rdbIptalOgrenci.Checked) ucret = 6;
 
             else ucret = 10;
+
+            ucret = numericUpDownIptalBiletAdet.Value * ucret;
 
             item.FilmID = Convert.ToInt32(cmbIptalFilm.SelectedValue);
             item.SalonID = Convert.ToInt32(cmbIptalSalon.SelectedValue);
@@ -418,7 +420,7 @@ namespace Sinema
             item.MusteriSoyad = txtIptalSoyad.Text;
             item.Koltuk = txtIptalKoltuk.Text;
             item.BiletAdet = Convert.ToInt32(numericUpDownIptalBiletAdet.Value);
-            item.Ucret = Convert.ToDecimal(numericUpDownIptalBiletAdet.Value * ucret);
+            item.Ucret = Convert.ToDecimal(ucret);
 
             if (BLLBILETCI.Bilet_Update(item))
             {
@@ -426,13 +428,13 @@ namespace Sinema
                 biletTemizle();
                 biletCek();             
                 doluKoltuklariCek();
+                lblUyariGuncelleme.Visible = false;
             }
             else
             {
                 MessageBox.Show("Bilet güncelleme işlemi eksik bilgiler yada başka nedenlerden dolayı gerçekleştirilemedi.Tüm boş alanları doldurup tekrar deneyin. Sorunun devam etmesi halinde lütfen yöneticinize danışın.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblUyariGuncelleme.Visible = true;
                 lblUyariGuncelleme.ForeColor = Color.Red;
-
             }           
         }
 

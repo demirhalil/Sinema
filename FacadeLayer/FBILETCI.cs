@@ -12,6 +12,7 @@ namespace FacadeLayer
 {
    public class FBILETCI
     {
+        #region Bilet İşlemleri
         //Bilet işlemlerinin yapıldığı metotlar.
         public static int Bilet_Insert(EBILET item)
         {
@@ -225,5 +226,6 @@ namespace FacadeLayer
 
             return dt;
         }
+        #endregion
     }
 }

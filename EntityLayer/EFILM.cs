@@ -8,6 +8,7 @@ namespace EntityLayer
 {
    public class EFILM
     {
+        #region Film Bilgileri
         private int _FilmID;
         private string _FilmAd;
         private string _Yonetmen;
@@ -106,5 +107,6 @@ namespace EntityLayer
                 _Kategori = value;
             }
         }
+        #endregion
     }
 }

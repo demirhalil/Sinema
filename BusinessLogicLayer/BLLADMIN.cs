@@ -11,6 +11,7 @@ namespace BusinessLogicLayer
 {
     public class BLLADMIN
     {
+        #region Çalışan Veri Kontrolü
         //Çalışan verilerinin kontrolünün yapıldığı metotlar.
         public static int Calisan_Insert(ECALISAN item)
         {
@@ -61,8 +62,9 @@ namespace BusinessLogicLayer
         {
             return FADMIN.getDataTableCalisan();
         }
+        #endregion
 
-
+        #region Film Veri Kontrolü
         //Film verilerinin kontrolünün yapıldığı metotlar.
         public static int Film_Insert(EFILM item)
         {
@@ -113,8 +115,9 @@ namespace BusinessLogicLayer
         {
             return FADMIN.getDataTableFilm();
         }
+        #endregion
 
-
+        #region Salon Veri Kontrolü
         //Salon verilerinin kontrolünün yapıldığı metotlar.
         public static int Salon_Insert(ESALON item)
         {
@@ -165,8 +168,9 @@ namespace BusinessLogicLayer
         {
             return FADMIN.getDataTableSalon();
         }
+        #endregion
 
-
+        #region Seans Veri Kontrolü
         //Seans verilerinin kontrolünün yapıldı metotlar.
         public static int Seans_Insert(ESEANS item)
         {
@@ -218,6 +222,6 @@ namespace BusinessLogicLayer
         {
             return FADMIN.getDataTableSeans();
         }
-
+        #endregion
     }
 }

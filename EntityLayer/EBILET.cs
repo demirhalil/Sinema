@@ -8,6 +8,7 @@ namespace EntityLayer
 {
    public class EBILET
     {
+        #region Bilet Bilgileri
         private int _BiletID;
         private int _FilmID;
         private int _SalonID;
@@ -135,4 +136,5 @@ namespace EntityLayer
             }
         }
     }
+    #endregion
 }

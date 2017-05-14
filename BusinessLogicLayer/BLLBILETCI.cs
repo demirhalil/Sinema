@@ -11,6 +11,7 @@ namespace BusinessLogicLayer
 {
     public class BLLBILETCI
     {
+        #region Bilet Veri Kontrolü
         //Bilet verilerinin kontrolünün yapıldığı metotlar.
         public static int Bilet_Insert(EBILET item)
         {
@@ -61,5 +62,6 @@ namespace BusinessLogicLayer
         {
             return FBILETCI.getDataTableBilet();
         }
+        #endregion
     }
 }

@@ -13,6 +13,7 @@ namespace FacadeLayer
 {
     public class FADMIN
     {
+        #region Çalışan İşlemleri
         //Çalışan işlemlerinin yapıldığı metotlar.
         public static int Calisan_Insert(ECALISAN item)
         {
@@ -228,8 +229,9 @@ namespace FacadeLayer
 
             return dt;
         }
+        #endregion
 
-
+        #region Film İşlemleri
         //Film işlemlerinin yapıldığı metotlar.
         public static int Film_Insert(EFILM item)
         {
@@ -438,8 +440,9 @@ namespace FacadeLayer
 
             return dt;
         }
+        #endregion
 
-
+        #region Salon İşlemleri
         //Salon işlemlerinin yapıldığı metotlar.
         public static int Salon_Insert(ESALON item)
         {
@@ -633,8 +636,9 @@ namespace FacadeLayer
 
             return dt;
         }
+        #endregion
 
-
+        #region Seans İşlemleri
         //Seans işlemlerinin yapıldı metotlar.
         public static int Seans_Insert(ESEANS item)
         {
@@ -824,8 +828,7 @@ namespace FacadeLayer
 
             return dt;
         }
-
-
+        #endregion
 
     }
 }
