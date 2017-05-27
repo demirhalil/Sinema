@@ -1,5 +1,4 @@
 # Sinema
-<br/><br/>
 
 Sistemde iki tür kullanıcı bulunmaktadır: **Admin** ve **Biletçi**.<br/>
 Biletçi sisteme kullanıcı adı ve şifre ile giriş yaparak ***Bilet İşlemlerini*** yapmakla sorumludur.<br/>
@@ -11,7 +10,6 @@ Admin ise sistemde bilet işlemleri dışında kalan ***Film İşlemleri***,***S
 **2**. Admin sinema salonunda yeni bir salon açılması durumunda sisteme salon ekleyebilir, artık film gösterimi yapılmayan salonları sistemden silebilir ve sisteme yanlış girilmiş salon bilgilerini güncelleyebilir.<br/>
 **3**. Admin sinemada yeni bir seans saati eklenmesi durumunda sisteme seans ekleyebilir, artık gösterim yapılmayan seans saatini silebilir ve sisteme yanlış girilmiş seans bilgilerini güncelleyebilir.<br/>
 **4**. Admin sinema salonunda yeni başlayacak olan bir çalışanı sisteme ekleyebilir, artık çalışmayan bir çalışanı sistemden silebilir ve sisteme yanlış girilmiş çalışan bilgilerini güncelleyebilir. Admin çalışanlardan birini admin ise biletçi, biletçi ise admin yapabilir.<br/>
-<br/>
 
 #### Biletçi <br/>
 **1**. Biletçi sadece bilet işlemlerinden sorumlu kişidir.<br/>
