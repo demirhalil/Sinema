@@ -3,7 +3,6 @@
 Sistemde iki tür kullanıcı bulunmaktadır: **Admin** ve **Biletçi**.<br/>
 Biletçi sisteme kullanıcı adı ve şifre ile giriş yaparak ***Bilet İşlemlerini*** yapmakla sorumludur.<br/>
 Admin ise sistemde bilet işlemleri dışında kalan ***Film İşlemleri***,***Salon İşlemleri***,***Seans İşlemleri*** ve ***Çalışan İşlemleri*** işlemleri yapmakla sorumludur.<br/>
-<br/><br/>
 
 #### Admin <br/>
 **1**. Admin yeni filmler olduğunda bunları sisteme ekleyebilir, gösterim süresi bitmiş filmleri sistemden silebilir ve sisteme yanlış girilmiş film bilgilerini güncelleyebilir.<br/>
